@@ -33,6 +33,13 @@
     margin-bottom: 100px;
 }
 
+.b-divider-line {
+    width: 100%;
+    height: 0px;
+    margin: 5px 0 20px 0;
+    border-top: 2px solid #000000;
+}
+
 /* Open sans font */
 .m-title {
     font-family: "Open Sans";
