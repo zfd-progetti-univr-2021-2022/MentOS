@@ -17,6 +17,7 @@
 #include "rbtree.h"
 #include "stdlib.h"
 #include "list_head.h"
+#include "deadlock_simulation.h"
 
 /// @brief          Assembly function setting the kernel stack to jump into
 ///                 location in Ring 3 mode (USER mode).
@@ -68,6 +69,11 @@ void kernel_initialize_scheduler()
 	runqueue.curr = NULL;
 	// Reset the number of active tasks.
 	runqueue.num_active = 0;
+
+#if ENABLE_DEADLOCK_PREVENTION
+    // Simulate deadlock.
+    deadlock_simulation();
+#endif
 }
 
 void enqueue_task(task_struct *process)
@@ -125,12 +131,14 @@ void kernel_schedule(pt_regs *f)
 	}
 	//==========================================================================
 
+#if 0
 	// Print, for debugging purpose, data about the current process.
 	if (runqueue.num_active > 2) {
 		dbg_print("PID:%3d, PRIO:%3d, VRUNTIME:%9d, SUM_EXEC:%9d\n",
 				  next_process->pid, next_process->se.prio,
 				  next_process->se.vruntime, next_process->se.sum_exec_runtime);
 	}
+#endif
 
 	//==== Context switch ======================================================
 	// Update the context of the current process.
@@ -377,6 +385,10 @@ void sys_exit(int exit_code)
 	}
 	// Free the space occupied by the stack.
 	destroy_process_image(runqueue.curr->mm);
+	// Clean resources needed by.
+	for (size_t i = 0; i < TASK_RESOURCE_MAX_AMOUNT; i++) {
+	    runqueue.curr->resources[i] = NULL;
+	}
 	// Debugging message.
 	dbg_print("Process %d exited with value %d\n", runqueue.curr->pid,
 			  exit_code);

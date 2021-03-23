@@ -11,7 +11,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "unistd.h"
-#include <misc/debug.h>
+#include "debug.h"
 
 int main_init()
 {

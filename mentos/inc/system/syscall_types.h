@@ -8,23 +8,27 @@
 
 // Return result in eax ("=a").
 // System call number in eax ("a").
-#define DEFN_SYSCALL0(__res, num)                                              \
-	__asm__ __volatile__("INT $0x80" : "=a"(__res) : "a"(num))
+#define DEFN_SYSCALL0(__res, num)      \
+	__asm__ __volatile__("INT $0x80"   \
+						 : "=a"(__res) \
+						 : "a"(num))
 
 // Return result in eax ("=a").
 // System call number in eax ("a").
 // p1 in ebx ("+b").
-#define DEFN_SYSCALL1(__res, num, p1)                                          \
-	__asm__ __volatile__("INT $0x80" : "=a"(__res), "+b"(p1) : "a"(num))
+#define DEFN_SYSCALL1(__res, num, p1)            \
+	__asm__ __volatile__("INT $0x80"             \
+						 : "=a"(__res), "+b"(p1) \
+						 : "a"(num))
 
-#define DEFN_SYSCALL2(__res, num, p1, p2)                                      \
-	__asm__ __volatile__("INT $0x80"                                           \
-						 : "=a"(__res), "+b"(p1), "+c"(p2)                     \
+#define DEFN_SYSCALL2(__res, num, p1, p2)                  \
+	__asm__ __volatile__("INT $0x80"                       \
+						 : "=a"(__res), "+b"(p1), "+c"(p2) \
 						 : "a"(num));
 
-#define DEFN_SYSCALL3(__res, num, p1, p2, p3)                                  \
-	__asm__ __volatile__("INT $0x80"                                           \
-						 : "=a"(__res), "+b"(p1), "+c"(p2), "+d"(p3)           \
+#define DEFN_SYSCALL3(__res, num, p1, p2, p3)                        \
+	__asm__ __volatile__("INT $0x80"                                 \
+						 : "=a"(__res), "+b"(p1), "+c"(p2), "+d"(p3) \
 						 : "a"(num))
 
 #define DEFN_SYSCALL4(__res, num, p1, p2, p3, p4)                              \
@@ -32,10 +36,10 @@
 						 : "=a"(__res), "+b"(p1), "+c"(p2), "+d"(p3), "+S"(p4) \
 						 : "a"(num))
 
-#define DEFN_SYSCALL5(__res, num, p1, p2, p3, p4, p5)                          \
-	__asm__ __volatile__("INT $0x80"                                           \
-						 : "=a"(__res), "+b"(p1), "+c"(p2), "+d"(p3),          \
-						   "+S"(p4), "+D"(p5)                                  \
+#define DEFN_SYSCALL5(__res, num, p1, p2, p3, p4, p5)                 \
+	__asm__ __volatile__("INT $0x80"                                  \
+						 : "=a"(__res), "+b"(p1), "+c"(p2), "+d"(p3), \
+						   "+S"(p4), "+D"(p5)                         \
 						 : "a"(num))
 
 #define __NR_exit 1
@@ -217,4 +221,12 @@
 #define __NR_vfork 188
 #define __NR_free 189 // TODO: remove me!
 
-#define SYSCALL_NUMBER 190
+/*
+#define __NR_sem_... 190
+#define __NR_sem_... 191
+#define __NR_sem_... 192
+#define __NR_sem_... 193
+#define __NR_sem_... 194
+*/
+
+#define SYSCALL_NUMBER 195

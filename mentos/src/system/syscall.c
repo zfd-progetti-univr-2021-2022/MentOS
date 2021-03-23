@@ -17,6 +17,8 @@
 #include "irqflags.h"
 #include "scheduler.h"
 
+#include "smart_sem_kernel.h"
+
 /// @brief The signature of a function call.
 typedef int (*SystemCall)();
 
@@ -61,6 +63,12 @@ void syscall_init()
 	sys_call_table[__NR_getcwd] = (SystemCall)sys_getcwd;
 	sys_call_table[__NR_brk] = (SystemCall)umalloc; // TODO: sys_brk
 	sys_call_table[__NR_free] = (SystemCall)ufree; // TODO: sys_brk
+
+	// sys_call_table[__NR_sem_...] = (SystemCall)sys_sem_...;
+	// sys_call_table[__NR_sem_...] = (SystemCall)sys_sem_...;
+	// sys_call_table[__NR_sem_...] = (SystemCall)sys_sem_...;
+	// sys_call_table[__NR_sem_...] = (SystemCall)sys_sem_...;
+	// sys_call_table[__NR_sem_...] = (SystemCall)sys_sem_...;
 
 	isr_install_handler(SYSTEM_CALL, &syscall_handler, "syscall_handler");
 }
