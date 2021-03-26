@@ -13,11 +13,11 @@
 
 task_struct *pick_next_task(runqueue_t *runqueue, time_t delta_exec)
 {
-	// Pointer to the next task to schedule.
-	task_struct *next = NULL;
+    // Pointer to the next task to schedule.
+    task_struct *next = NULL;
 
 #if defined(SCHEDULER_RR)
-	//==== Implementatin of the Round-Robin Scheduling algorithm ============
+    //==== Implementatin of the Round-Robin Scheduling algorithm ============
 
     // nNode = next(c)
     struct list_head *nNode = runqueue->curr->run_list.next;
@@ -29,53 +29,53 @@ task_struct *pick_next_task(runqueue_t *runqueue, time_t delta_exec)
     // n = entry(nNode)
     next = list_entry(nNode, struct task_struct, run_list);
 
-	//=======================================================================
+    //=======================================================================
 #elif defined(SCHEDULER_PRIORITY)
-	//==== Implementatin of the Priority Scheduling algorithm ===============
+    //==== Implementatin of the Priority Scheduling algorithm ===============
 
-	// get the first element of the list
-	next = list_entry(/*...*/);
+    // get the first element of the list
+    next = list_entry(/*...*/);
 
-	// Get its static priority.
-	time_t min = /*...*/
+    // Get its static priority.
+    time_t min = /*...*/
 
-	list_head *it;
-	// Inter over the runqueue to find the task with the smallest priority value
-	list_for_each (it, &runqueue->queue) {
-		task_struct *entry = list_entry(/*...*/);
-		// Check entry has a lower priority
-		if (/*...*/) {
-			/*...*/
-		}
-	}
+    list_head *it;
+    // Inter over the runqueue to find the task with the smallest priority value
+    list_for_each (it, &runqueue->queue) {
+        task_struct *entry = list_entry(/*...*/);
+        // Check entry has a lower priority
+        if (/*...*/) {
+            /*...*/
+        }
+    }
 
-	//=======================================================================
+    //=======================================================================
 #elif defined(SCHEDULER_CFS)
-	//==== Implementatin of the Completely Fair Scheduling ==================
+    //==== Implementatin of the Completely Fair Scheduling ==================
 
-	// Get the weight of the current process.
-	// (use GET_WEIGHT macro!)
-	int weight = /*...*/
+    // Get the weight of the current process.
+    // (use GET_WEIGHT macro!)
+    int weight = /*...*/
 
-	if (weight != NICE_0_LOAD) {
-		// get the multiplicative factor for its delta_exec.
-		double factor = /*...*/
+    if (weight != NICE_0_LOAD) {
+        // get the multiplicative factor for its delta_exec.
+        double factor = /*...*/
 
-		// weight the delta_exec with the multiplicative factor.
-		delta_exec = // ...
-	}
+        // weight the delta_exec with the multiplicative factor.
+        delta_exec = // ...
+    }
 
-	// Update vruntime of the current process.
-	// ...
+    // Update vruntime of the current process.
+    // ...
 
-	// Inter over the runqueue to find the task with the smallest vruntime value
-	// ...
+    // Inter over the runqueue to find the task with the smallest vruntime value
+    // ...
 
-	//========================================================================
+    //========================================================================
 #else
 #error "You should enable a scheduling algorithm!"
 #endif
-	assert(next && "No valid task selected. Have you implemented a scheduling algorithm?");
+    assert(next && "No valid task selected. Have you implemented a scheduling algorithm?");
 
-	return next;
+    return next;
 }

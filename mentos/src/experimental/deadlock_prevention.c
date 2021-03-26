@@ -40,7 +40,7 @@
 ///                         task.
 /// @param n Number of tasks currently in the system.
 /// @param m Number of resource types in the system (length of req_vec).
-static bool_t state_safe(uint32_t *arr_available, uint32_t ** mat_alloc,
+static bool_t state_safe(uint32_t *arr_available, uint32_t **mat_alloc,
         uint32_t **mat_need, size_t n, size_t m)
 {
     // Allocate work as a copy of available.
