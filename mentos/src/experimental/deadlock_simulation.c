@@ -73,6 +73,15 @@ uint32_t initial_max[SIM_N][SIM_M]   = {{1, 1}, {1, 1}};
 /// @brief Initial matrix of current resource allocation of each task.
 uint32_t initial_alloc[SIM_N][SIM_M] = {{0, 0}, {0, 0}};
 
+/// Array of resources instances currently available;
+uint32_t *  arr_available;
+/// Matrix of the maximum resources instances that each task may require;
+uint32_t ** mat_max;
+/// Matrix of current resources instances allocation of each task.
+uint32_t ** mat_alloc;
+/// Matrix of current resources instances need of each task.
+uint32_t ** mat_need;
+
 /// @brief Simulation requests.
 req_t req_vec_test[] =  {
         {.req_task=0, .op=LOCK, .req_vec={1, 0}},
@@ -93,8 +102,8 @@ static void simulation_stats_available()
 {
     dbg_print(" { ");
     for (size_t j = 0; j < SIM_M-1; j++)
-        dbg_print("R_%i: %u, ", j, available[j]);
-    dbg_print("R_%d: %u }", SIM_M-1, available[SIM_M-1]);
+        dbg_print("R_%i: %u, ", j, arr_available[j]);
+    dbg_print("R_%d: %u }", SIM_M-1, arr_available[SIM_M-1]);
 }
 
 static void simulation_stats_request(uint32_t *req_vec, size_t length)
@@ -149,16 +158,16 @@ static void simulation_stats()
     simulation_stats_available();
     dbg_print("\n");
 
-    simulation_stats_matrix("MAX", max, SIM_N, SIM_M);
-    simulation_stats_matrix("ALLOC", alloc, SIM_N, SIM_M);
-    simulation_stats_matrix("NEED", need, SIM_N, SIM_M);
+    simulation_stats_matrix("MAX", mat_max, SIM_N, SIM_M);
+    simulation_stats_matrix("ALLOC", mat_alloc, SIM_N, SIM_M);
+    simulation_stats_matrix("NEED", mat_need, SIM_N, SIM_M);
 }
 
 static deadlock_status_t simulation_try_lock(uint32_t *req_vec, size_t task_i,
                                              size_t n, size_t m)
 {
 #if ENABLE_DEADLOCK_PREVENTION
-    return request(req_vec, task_i, n, m);
+    return request(req_vec, task_i, arr_available, mat_alloc, mat_need, n, m);
 #else
     return ERROR;
 #endif
@@ -166,7 +175,7 @@ static deadlock_status_t simulation_try_lock(uint32_t *req_vec, size_t task_i,
 
 static void simulation_lock(uint32_t *req_vec, pid_t pid)
 {
-    if (!(available && max && alloc && need))
+    if (!(arr_available && mat_max && mat_alloc && mat_need))
     {
         dbg_print("Some task-resource matrices NULL\n");
         return;
@@ -180,7 +189,7 @@ static void simulation_lock(uint32_t *req_vec, pid_t pid)
             dbg_print("available:");
             simulation_stats_available();
             dbg_print("\n");
-            simulation_stats_matrix("ALLOC", alloc, SIM_N, SIM_M);
+            simulation_stats_matrix("ALLOC", mat_alloc, SIM_N, SIM_M);
             break;
         case WAIT:
             dbg_print("LOCK (task %d; req_vec:", pid);
@@ -189,7 +198,7 @@ static void simulation_lock(uint32_t *req_vec, pid_t pid)
             dbg_print("available:");
             simulation_stats_available();
             dbg_print("\n");
-            simulation_stats_matrix("ALLOC", alloc, SIM_N, SIM_M);
+            simulation_stats_matrix("ALLOC", mat_alloc, SIM_N, SIM_M);
             break;
         case WAIT_UNSAFE:
             dbg_print("LOCK (task %d; rec_vec:", pid);
@@ -198,7 +207,7 @@ static void simulation_lock(uint32_t *req_vec, pid_t pid)
             dbg_print("available:");
             simulation_stats_available();
             dbg_print("\n");
-            simulation_stats_matrix("ALLOC", alloc, SIM_N, SIM_M);
+            simulation_stats_matrix("ALLOC", mat_alloc, SIM_N, SIM_M);
             break;
         case ERROR:
             dbg_print("LOCK (task %d; rec_vec:", pid);
@@ -207,7 +216,7 @@ static void simulation_lock(uint32_t *req_vec, pid_t pid)
             dbg_print("available:");
             simulation_stats_available();
             dbg_print("\n");
-            simulation_stats_matrix("ALLOC", alloc, SIM_N, SIM_M);
+            simulation_stats_matrix("ALLOC", mat_alloc, SIM_N, SIM_M);
             break;
         default:
             return;
@@ -216,7 +225,7 @@ static void simulation_lock(uint32_t *req_vec, pid_t pid)
 
 static void simulation_free(uint32_t *req_vec, pid_t pid)
 {
-    if (arr_l_any(alloc[pid], req_vec, SIM_M))
+    if (arr_l_any(mat_alloc[pid], req_vec, SIM_M))
     {
         dbg_print("FREE (task %d; rec_vec:", pid);
         simulation_stats_request(req_vec, SIM_M);
@@ -224,14 +233,14 @@ static void simulation_free(uint32_t *req_vec, pid_t pid)
         dbg_print("available:");
         simulation_stats_available();
         dbg_print("\n");
-        simulation_stats_matrix("ALLOC", alloc, SIM_N, SIM_M);
+        simulation_stats_matrix("ALLOC", mat_alloc, SIM_N, SIM_M);
         return;
     }
 
-    arr_add(available, req_vec, SIM_M);
-    arr_sub(alloc[pid], req_vec, SIM_M);
+    arr_add(arr_available, req_vec, SIM_M);
+    arr_sub(mat_alloc[pid], req_vec, SIM_M);
     // Check what happen if you uncomment the following line.
-    // arr_add(need[pid], req_vec, SIM_M);
+    // arr_add(mat_need[pid], req_vec, SIM_M);
 
     dbg_print("FREE (task %d; rec_vec:", pid);
     simulation_stats_request(req_vec, SIM_M);
@@ -239,28 +248,28 @@ static void simulation_free(uint32_t *req_vec, pid_t pid)
     dbg_print("available:");
     simulation_stats_available();
     dbg_print("\n");
-    simulation_stats_matrix("ALLOC", alloc, SIM_N, SIM_M);
+    simulation_stats_matrix("ALLOC", mat_alloc, SIM_N, SIM_M);
 }
 
 static void simulation_init()
 {
-    available = (uint32_t *)  kmalloc(SIM_M * sizeof(uint32_t));
-    max       = (uint32_t **) kmmalloc(SIM_N, SIM_M * sizeof(uint32_t));
-    alloc     = (uint32_t **) kmmalloc(SIM_N, SIM_M * sizeof(uint32_t));
-    need      = (uint32_t **) kmmalloc(SIM_N, SIM_M * sizeof(uint32_t));
+    arr_available = (uint32_t *)  kmalloc(SIM_M * sizeof(uint32_t));
+    mat_max       = (uint32_t **) kmmalloc(SIM_N, SIM_M * sizeof(uint32_t));
+    mat_alloc     = (uint32_t **) kmmalloc(SIM_N, SIM_M * sizeof(uint32_t));
+    mat_need      = (uint32_t **) kmmalloc(SIM_N, SIM_M * sizeof(uint32_t));
 
-    memcpy(available,  initial_available, SIM_M * sizeof(uint32_t));
+    memcpy(arr_available,  initial_available, SIM_M * sizeof(uint32_t));
     for (size_t i = 0; i < SIM_N; i++)
     {
-        memcpy(max[i],   initial_max[i],   SIM_M * sizeof(uint32_t));
-        memcpy(alloc[i], initial_alloc[i], SIM_M * sizeof(uint32_t));
+        memcpy(mat_max[i],   initial_max[i],   SIM_M * sizeof(uint32_t));
+        memcpy(mat_alloc[i], initial_alloc[i], SIM_M * sizeof(uint32_t));
     }
 
-    // Calculate need[i][j] = max[i][j] - alloc[i][j].
+    // Calculate mat_need[i][j] = mat_max[i][j] - mat_alloc[i][j].
     for (size_t i = 0; i < SIM_N; i++)
     {
-        memcpy(need[i],  max[i],   SIM_M * sizeof(uint32_t));
-        arr_sub(need[i], alloc[i], SIM_M);
+        memcpy(mat_need[i],  mat_max[i],   SIM_M * sizeof(uint32_t));
+        arr_sub(mat_need[i], mat_alloc[i], SIM_M);
     }
 }
 
@@ -295,13 +304,13 @@ static void simulation_start()
 
 static void simulation_close()
 {
-    kfree(available);
-    kmfree((void **) max, SIM_N);
-    kmfree((void **) alloc, SIM_N);
-    kmfree((void **) need, SIM_N);
-    max = NULL;
-    alloc = NULL;
-    need = NULL;
+    kfree(arr_available);
+    kmfree((void **) mat_max, SIM_N);
+    kmfree((void **) mat_alloc, SIM_N);
+    kmfree((void **) mat_need, SIM_N);
+    mat_max = NULL;
+    mat_alloc = NULL;
+    mat_need = NULL;
 }
 
 void deadlock_simulation(int argc, char **argv)

@@ -14,15 +14,6 @@ extern runqueue_t runqueue;
 /// The list of resources.
 resource_list_t r_list;
 
-/// Array of resources instances currently available;
-uint32_t *  available;
-/// Matrix of the maximum resources instances that each task may require;
-uint32_t ** max;
-/// Matrix of current resources instances allocation of each task.
-uint32_t ** alloc;
-/// Matrix of current resources instances need of each task.
-uint32_t ** need;
-
 /// @brief Remove the resource reference dependency from each task in running
 /// state.
 /// @param r Resource pointer.
@@ -69,28 +60,28 @@ static task_struct **compute_index_map_task_struct(
 
 /// @brief Generate the available array, that contains the resources instances
 /// currently available.
-/// @param available Pointer of the array already allocated to fill.
+/// @param arr_available Pointer of the array already allocated to fill.
 /// @return The same pointer passed as parameter.
-static uint32_t *fill_available(uint32_t *available)
+static uint32_t *fill_available(uint32_t *arr_available)
 {
     // Loop on resources created.
     list_head *resource_it;
     list_for_each (resource_it, &r_list.head) {
         resource_t *resource = list_entry(resource_it, resource_t,
                                           resources_list);
-        available[resource->rid] =
+        arr_available[resource->rid] =
                 resource->n_instances - resource->assigned_instances;
     }
 
-    return available;
+    return arr_available;
 }
 
 /// @brief Generate the max matrix, that contains the maximum number of
 /// resources instances that each task may require.
-/// @param max Pointer of the matrix already allocated to fill.
+/// @param mat_max Pointer of the matrix already allocated to fill.
 /// @param idx_map_task_struct Pointer to the array of index and tasks mapping.
 /// @return The same pointer passed as first parameter.
-static uint32_t **fill_max(uint32_t **max, task_struct *idx_map_task_struct[])
+static uint32_t **fill_max(uint32_t **mat_max, task_struct *idx_map_task_struct[])
 {
     // Loop on all tasks.
     size_t n = kernel_get_active_processes();
@@ -101,21 +92,21 @@ static uint32_t **fill_max(uint32_t **max, task_struct *idx_map_task_struct[])
             // Find resources needed by the task.
             for (size_t r_i = 0; r_i < m; r_i++) {
                 if (task->resources[r_i] != NULL) {
-                    max[t_i][r_i] = task->resources[r_i]->n_instances;
+                    mat_max[t_i][r_i] = task->resources[r_i]->n_instances;
                 }
             }
         }
     }
 
-    return max;
+    return mat_max;
 }
 
 /// @brief Generate the alloc matrix, that contains the current resources
 /// instances allocated for each task.
-/// @param alloc Pointer of the matrix already allocated to fill.
+/// @param mat_alloc Pointer of the matrix already allocated to fill.
 /// @param idx_map_task_struct Pointer to the array of index and tasks mapping.
 /// @return The same pointer passed as first parameter.
-static uint32_t **fill_alloc(uint32_t **alloc,
+static uint32_t **fill_alloc(uint32_t **mat_alloc,
                              task_struct *idx_map_task_struct[])
 {
     size_t n = kernel_get_active_processes();
@@ -127,30 +118,31 @@ static uint32_t **fill_alloc(uint32_t **alloc,
         // Find the task with this resource assigned and take the instances num.
         for (size_t t_i = 0; t_i < n; t_i++) {
             if (idx_map_task_struct[t_i] == resource->assigned_task) {
-                alloc[t_i][resource->rid] = resource->assigned_instances;
+                mat_alloc[t_i][resource->rid] = resource->assigned_instances;
             }
         }
     }
 
-    return alloc;
+    return mat_alloc;
 }
 
 /// @brief Generate the need matrix, that contains the current resources
 /// instances need of each task.
-/// @param need Pointer of the matrix already allocated to fill.
-/// @param max Pointer to the max matrix.
-/// @param alloc Pointer to the alloc matrix.
+/// @param mat_need Pointer of the matrix already allocated to fill.
+/// @param mat_max Pointer to the max matrix.
+/// @param mat_alloc Pointer to the alloc matrix.
 /// @return The same pointer passed as first parameter.
-static uint32_t **fill_need(uint32_t **need, uint32_t **max, uint32_t **alloc)
+static uint32_t **fill_need(uint32_t **mat_need, uint32_t **mat_max,
+        uint32_t **mat_alloc)
 {
     // Calculate need[i][j] = max[i][j] - alloc[i][j].
     size_t n = kernel_get_active_processes();
     size_t m = kernel_get_active_resources();
     for (size_t i = 0; i < n; i++) {
-        memcpy(need[i],  max[i],   m * sizeof(uint32_t));
-        arr_sub(need[i], alloc[i], m);
+        memcpy(mat_need[i],  mat_max[i],   m * sizeof(uint32_t));
+        arr_sub(mat_need[i], mat_alloc[i], m);
     }
-    return need;
+    return mat_need;
 }
 
 resource_t *resource_create(const char *category)
@@ -229,20 +221,20 @@ void resource_deassign(resource_t *r)
     r->assigned_instances = 0;
 }
 
-void init_deadlock_structures(uint32_t *available, uint32_t **max,
-        uint32_t **alloc, uint32_t **need,
+void init_deadlock_structures(uint32_t *arr_available, uint32_t **mat_max,
+        uint32_t **mat_alloc, uint32_t **mat_need,
         task_struct *idx_map_task_struct[])
 {
-    reset_deadlock_structures(available, max, alloc, idx_map_task_struct);
+    reset_deadlock_structures(arr_available, mat_max, mat_alloc, idx_map_task_struct);
     compute_index_map_task_struct(idx_map_task_struct);
-    fill_alloc(alloc, idx_map_task_struct);
-    fill_max(max, idx_map_task_struct);
-    fill_available(available);
-    fill_need(need, max, alloc);
+    fill_alloc(mat_alloc, idx_map_task_struct);
+    fill_max(mat_max, idx_map_task_struct);
+    fill_available(arr_available);
+    fill_need(mat_need, mat_max, mat_alloc);
 }
 
-void reset_deadlock_structures(uint32_t *available, uint32_t **max,
-        uint32_t **alloc, task_struct *idx_map_task_struct[])
+void reset_deadlock_structures(uint32_t *arr_available, uint32_t **mat_max,
+        uint32_t **mat_alloc, task_struct *idx_map_task_struct[])
 {
     size_t n = kernel_get_active_processes();
     size_t m = kernel_get_active_resources();
@@ -250,12 +242,12 @@ void reset_deadlock_structures(uint32_t *available, uint32_t **max,
     // Clean idx_map_task_struct and rows of max and alloc.
     for (size_t t_i = 0; t_i < n; t_i++) {
         idx_map_task_struct[t_i] = NULL;
-        memset(alloc[t_i], 0, m * sizeof(uint32_t));
-        memset(max[t_i], 0, m * sizeof(uint32_t));
+        memset(mat_alloc[t_i], 0, m * sizeof(uint32_t));
+        memset(mat_max[t_i], 0, m * sizeof(uint32_t));
     }
 
     // Clean row of resources.
-    memset(available, 0, m * sizeof(uint32_t));
+    memset(arr_available, 0, m * sizeof(uint32_t));
 }
 
 size_t kernel_get_active_resources()

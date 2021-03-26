@@ -46,14 +46,15 @@ static bool_t sys_sem_try(int id)
     // Init deadlock prevention structures.
     size_t n = kernel_get_active_processes();
     size_t m = kernel_get_active_resources();
-    available = (uint32_t *)  kmalloc(m * sizeof(uint32_t));
-    max       = (uint32_t **) kmmalloc(n, m * sizeof(uint32_t));
-    alloc     = (uint32_t **) kmmalloc(n, m * sizeof(uint32_t));
-    need      = (uint32_t **) kmmalloc(n, m * sizeof(uint32_t));
+    uint32_t *arr_available  = (uint32_t *)  kmalloc(m * sizeof(uint32_t));
+    uint32_t **mat_max       = (uint32_t **) kmmalloc(n, m * sizeof(uint32_t));
+    uint32_t **mat_alloc     = (uint32_t **) kmmalloc(n, m * sizeof(uint32_t));
+    uint32_t **mat_need      = (uint32_t **) kmmalloc(n, m * sizeof(uint32_t));
     task_struct **idx_map_task_struct = (task_struct **) kmalloc(
             n * sizeof(task_struct *));
-    if (available && max && alloc && need && idx_map_task_struct) {
-        init_deadlock_structures(available, max, alloc, need,
+    if (arr_available && mat_max && mat_alloc && mat_need
+        && idx_map_task_struct) {
+        init_deadlock_structures(arr_available, mat_max, mat_alloc, mat_need,
                 idx_map_task_struct);
     } else {
         kernel_panic("not able to perform allocation for deadlock prevention");
@@ -76,7 +77,8 @@ static bool_t sys_sem_try(int id)
 
     // Perform request.
     bool_t ret = false;
-    switch (request(req_vec, current_task_idx, n, m)) {
+    switch (request(req_vec, current_task_idx, arr_available, mat_alloc,
+            mat_need, n, m)) {
         case WAIT:
         case WAIT_UNSAFE:
             break;
@@ -92,15 +94,12 @@ static bool_t sys_sem_try(int id)
             kernel_panic("deadlock prevention error");
     }
 
-    kfree(available);
-    kmfree((void **) max, n);
-    kmfree((void **) alloc, n);
-    kmfree((void **) need, n);
+    kfree(arr_available);
+    kmfree((void **) mat_max, n);
+    kmfree((void **) mat_alloc, n);
+    kmfree((void **) mat_need, n);
     kfree(idx_map_task_struct);
     kfree(req_vec);
-    max   = NULL;
-    alloc = NULL;
-    need  = NULL;
 
     return ret;
 #else

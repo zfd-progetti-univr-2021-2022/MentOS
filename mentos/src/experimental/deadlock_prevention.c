@@ -31,23 +31,20 @@
 #include "arr_math.h"
 #include "kheap.h"
 
-/// Array of resources instances currently available;
-uint32_t *  available;
-/// Matrix of the maximum resources instances that each task may require;
-uint32_t ** max;
-/// Matrix of current resources instances allocation of each task.
-uint32_t ** alloc;
-/// Matrix of current resources instances need of each task.
-uint32_t ** need;
-
 /// @brief Check if the current system resource allocation maintains the system
 /// in a safe state.
+/// @param arr_available    Array of resources instances currently available.
+/// @param mat_alloc        Matrix of current resources instances allocation of
+///                         each task.
+/// @param mat_need         Matrix of current resources instances need of each
+///                         task.
 /// @param n Number of tasks currently in the system.
 /// @param m Number of resource types in the system (length of req_vec).
-static bool_t state_safe(size_t n, size_t m)
+static bool_t state_safe(uint32_t *arr_available, uint32_t ** mat_alloc,
+        uint32_t **mat_need, size_t n, size_t m)
 {
     // Allocate work as a copy of available.
-    uint32_t *work = memcpy(kmalloc(sizeof(uint32_t) * m), available,
+    uint32_t *work = memcpy(kmalloc(sizeof(uint32_t) * m), arr_available,
                             sizeof(uint32_t) * m);
 
     // Allocate finish initialized with all false (zeros).
@@ -82,7 +79,9 @@ static bool_t state_safe(size_t n, size_t m)
     return true;
 }
 
-deadlock_status_t request(uint32_t *req_vec, size_t task_i, size_t n, size_t m)
+deadlock_status_t request(uint32_t *req_vec, size_t task_i,
+        uint32_t *arr_available, uint32_t ** mat_alloc, uint32_t **mat_need,
+        size_t n, size_t m)
 {
     if (/* ... */)
     {
