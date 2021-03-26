@@ -159,13 +159,13 @@ make
 make qemu
 ```
 
-Enable to Buddy System
+Enable Buddy System
 -----------------
 
 MentOS provides a Buddy System to manage the allocation and deallocation of
-page frames in the physical memory.
+page frames in physical memory.
 
-If you want to enable the MentOS's Buddy System:
+If you want to enable MentOS's Buddy System:
 
 ```
 cd build
@@ -211,6 +211,31 @@ type g
 make
 make qemu
 ```
+
+Enable Deadlock Prevention
+-----------------
+
+MentOS implements the Banker's Algorithm to perform deadlock prevention for 
+user-space tasks.
+
+If you want to enable deadlock prevention in MentOS:
+
+```
+cd build
+cmake -DENABLE_DEADLOCK_PREVENTION=ON ..
+make
+make qemu
+```
+
+Otherwise you can use `ccmake` as shown previously for Buddy System enablement.
+
+You can control the behavior of the deadlock algorithm with a shell command 
+line that allows you to run two mis-synchronized processes on two shared 
+resources, bringing the operating system into a possible deadlock state. 
+Of course the deadlock state is not always reached, because the tasks scheduling 
+is nondeterministic. The shell command line is `deadlock [-i <iter>]` where the 
+optional parameter `-i <iter>` specify the number of iterations of created tasks 
+over the shared resources, by default it will perform only 1 iteration. 
 
 Use Debugger
 -----------------
