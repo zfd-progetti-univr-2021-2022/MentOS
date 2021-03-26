@@ -13,57 +13,57 @@
 
 int sem_create()
 {
-	int retval = 0;
+    int retval = 0;
 
-	/* ... */
+    /* ... */
 
     dbg_print("sem_create() -> %d\n", retval);
 
-	return retval;
+    return retval;
 }
 
 int sem_destroy(int id)
 {
-	int retval = 0;
-	
+    int retval = 0;
+    
     dbg_print("sem_destroy(%d)\n", id);
 
-	/* ... */
+    /* ... */
 
-	return retval;
+    return retval;
 }
 
 int sem_init(int id)
 {
-	int retval = 0;
-	
+    int retval = 0;
+    
     dbg_print("sem_init(%d)\n", id);
 
-	/* ... */
+    /* ... */
 
-	return retval;
+    return retval;
 }
 
 int sem_acquire(int id)
 {
-	int retval;
-	
+    int retval;
+    
     dbg_print("sem_acquire(%d)\n", id);
 
-	do {
-		/* ... */
-	} while (retval != 1);
+    do {
+        /* ... */
+    } while (retval != 1);
 
-	return retval;
+    return retval;
 }
 
 int sem_release(int id)
 {
-	int retval = 0;
-	
+    int retval = 0;
+    
     dbg_print("sem_release(%d)\n", id);
 
-	/* ... */
-	
-	return retval;
+    /* ... */
+    
+    return retval;
 }

@@ -25,10 +25,10 @@ typedef struct {
     /// Semaphore mutex value. The initialization value is 0.
     volatile atomic_t mutex;
     /// Set to true if this semaphore instance is used, otherwise is false.
-	bool_t used;
-	/// Reference to the resource related with the semaphore used. If semaphore
-	/// is not used, this pointer is NULL.
-	resource_t *sem_resource;
+    bool_t used;
+    /// Reference to the resource related with the semaphore used. If semaphore
+    /// is not used, this pointer is NULL.
+    resource_t *sem_resource;
 } smart_sem_t;
 
 /// Global array of all smart semaphores that can be allocated.
@@ -112,61 +112,61 @@ static bool_t sys_sem_try(int id)
 int sys_sem_create()
 {
     int id = -1;
-	for (unsigned i = 0; i < SEM_MAX; ++i) {
-		if (!semaphores[i].used) {
-			semaphores[i].sem_resource = resource_create("sem");
-		    if (!semaphores[i].sem_resource) {
-			    return -1;
+    for (unsigned i = 0; i < SEM_MAX; ++i) {
+        if (!semaphores[i].used) {
+            semaphores[i].sem_resource = resource_create("sem");
+            if (!semaphores[i].sem_resource) {
+                return -1;
             }
 
             semaphores[i].used = true;
-			id = (int)i;
+            id = (int)i;
             break;
-		}
-	}
+        }
+    }
     dbg_print("sys_sem_create() -> %d\n", id);
-	return id;
+    return id;
 }
 
 int sys_sem_destroy(int id)
 {
     dbg_print("sys_sem_destroy(%d)\n", id);
-	if ((id < 0) || (id > SEM_MAX)) {
+    if ((id < 0) || (id > SEM_MAX)) {
         return -1;
     }
-	semaphores[id].used = false;
-	resource_destroy(semaphores[id].sem_resource);
-	return 0;
+    semaphores[id].used = false;
+    resource_destroy(semaphores[id].sem_resource);
+    return 0;
 }
 
 int sys_sem_init(int id)
 {
     dbg_print("sys_sem_init(%d)\n", id);
-	if ((id < 0) || (id > SEM_MAX)) {
+    if ((id < 0) || (id > SEM_MAX)) {
         return -1;
     }
-	if (!semaphores[id].used) {
+    if (!semaphores[id].used) {
         return -1;
     }
-	atomic_set(&semaphores[id].value, 0);
-	resource_init(semaphores[id].sem_resource);
-	return 0;
+    atomic_set(&semaphores[id].value, 0);
+    resource_init(semaphores[id].sem_resource);
+    return 0;
 }
 
 int sys_sem_try_acquire(int id)
 {
     dbg_print("sys_sem_try_acquire(%d)\n", id);
-	if ((id < 0) || (id > SEM_MAX)) {
+    if ((id < 0) || (id > SEM_MAX)) {
         return -1;
     }
     if (!semaphores[id].used) {
         return -1;
     }
 
-	if (sys_sem_try(id)) {
-	    resource_assign(semaphores[id].sem_resource);
-	    return 1;
-	}
+    if (sys_sem_try(id)) {
+        resource_assign(semaphores[id].sem_resource);
+        return 1;
+    }
 
     return 0;
 }
@@ -174,13 +174,13 @@ int sys_sem_try_acquire(int id)
 int sys_sem_release(int id)
 {
     dbg_print("sys_sem_release(%d)\n", id);
-	if ((id < 0) || (id > SEM_MAX)) {
+    if ((id < 0) || (id > SEM_MAX)) {
         return -1;
     }
-	if (!semaphores[id].used) {
-	    return -1;
-	}
-	atomic_set(&semaphores[id].value, 0);
+    if (!semaphores[id].used) {
+        return -1;
+    }
+    atomic_set(&semaphores[id].value, 0);
     resource_deassign(semaphores[id].sem_resource);
-	return 0;
+    return 0;
 }
