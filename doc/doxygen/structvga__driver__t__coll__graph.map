@@ -1,0 +1,4 @@
+<map id="vga_driver_t" name="vga_driver_t">
+<area shape="rect" id="node1" title="VGA driver details." alt="" coords="5,95,108,121"/>
+<area shape="rect" id="node2" href="$structvga__ops__t.html" title="VGA pointers for drawing operations." alt="" coords="13,5,101,32"/>
+</map>

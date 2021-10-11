@@ -1,0 +1,5 @@
+<map id="libc/inc/bits/stat.h" name="libc/inc/bits/stat.h">
+<area shape="rect" id="node1" title="Defines the structure used by the functiosn fstat(), lstat(), and stat()." alt="" coords="5,5,143,32"/>
+<area shape="rect" id="node2" href="$stddef_8h.html" title="Define basic data types." alt="" coords="37,155,111,181"/>
+<area shape="rect" id="node3" href="$time_8h.html" title="Time&#45;related functions." alt="" coords="77,80,141,107"/>
+</map>

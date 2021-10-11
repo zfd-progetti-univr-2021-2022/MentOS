@@ -1,0 +1,9 @@
+<map id="zone_t" name="zone_t">
+<area shape="rect" id="node1" title="Data structure to differentiate memory zone." alt="" coords="263,323,328,349"/>
+<area shape="rect" id="node2" href="$structpage__t.html" title="Page descriptor. Use as a bitmap to understand the order of the block and if it is free or allocated." alt="" coords="138,233,205,260"/>
+<area shape="rect" id="node3" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="279,7,360,33"/>
+<area shape="rect" id="node4" href="$structbb__page__t.html" title="The base structure representing a bb page." alt="" coords="181,143,271,169"/>
+<area shape="rect" id="node5" href="$structkmem__cache__t.html" title="Stores the information of a cache." alt="" coords="5,143,127,169"/>
+<area shape="rect" id="node6" href="$structbb__instance__t.html" title="Buddy system instance, that represents a memory area managed by the buddy system." alt="" coords="378,233,490,260"/>
+<area shape="rect" id="node7" href="$structbb__free__area__t.html" title="Buddy system descriptor: collection of free page blocks. Each block represents 2^k free contiguous pa..." alt="" coords="623,143,741,169"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="mentos/src/descriptor_tables/gdt.c" name="mentos/src/descriptor_tables/gdt.c">
+<area shape="rect" id="node1" title="Functions which manage the Global Descriptor Table (GDT)." alt="" coords="161,5,324,47"/>
+<area shape="rect" id="node2" href="$mentos_2inc_2misc_2debug_8h.html" title="Debugging primitives." alt="" coords="24,95,133,121"/>
+<area shape="rect" id="node4" href="$gdt_8h.html" title="Data structures concerning the Global Descriptor Table (GDT)." alt="" coords="157,95,328,121"/>
+<area shape="rect" id="node6" href="$tss_8h.html" title=" " alt="" coords="353,95,522,121"/>
+<area shape="rect" id="node3" href="$kernel__levels_8h.html" title=" " alt="" coords="5,169,152,196"/>
+<area shape="rect" id="node5" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="305,169,375,196"/>
+</map>

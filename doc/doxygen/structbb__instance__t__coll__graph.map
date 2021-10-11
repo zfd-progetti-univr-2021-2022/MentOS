@@ -1,0 +1,6 @@
+<map id="bb_instance_t" name="bb_instance_t">
+<area shape="rect" id="node1" title="Buddy system instance, that represents a memory area managed by the buddy system." alt="" coords="165,201,277,228"/>
+<area shape="rect" id="node2" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="181,7,262,33"/>
+<area shape="rect" id="node3" href="$structbb__page__t.html" title="The base structure representing a bb page." alt="" coords="177,112,266,139"/>
+<area shape="rect" id="node4" href="$structbb__free__area__t.html" title="Buddy system descriptor: collection of free page blocks. Each block represents 2^k free contiguous pa..." alt="" coords="290,112,409,139"/>
+</map>

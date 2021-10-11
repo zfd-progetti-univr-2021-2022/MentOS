@@ -1,0 +1,10 @@
+<map id="mentos/src/descriptor_tables/tss.c" name="mentos/src/descriptor_tables/tss.c">
+<area shape="rect" id="node1" title=" " alt="" coords="275,5,438,47"/>
+<area shape="rect" id="node2" href="$tss_8h.html" title=" " alt="" coords="5,95,175,121"/>
+<area shape="rect" id="node4" href="$string_8h.html" title="String routines." alt="" coords="395,95,465,121"/>
+<area shape="rect" id="node6" href="$mentos_2inc_2misc_2debug_8h.html" title="Debugging primitives." alt="" coords="499,95,609,121"/>
+<area shape="rect" id="node8" href="$gdt_8h.html" title="Data structures concerning the Global Descriptor Table (GDT)." alt="" coords="199,95,370,121"/>
+<area shape="rect" id="node3" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="152,169,223,196"/>
+<area shape="rect" id="node5" href="$stddef_8h.html" title="Define basic data types." alt="" coords="387,169,462,196"/>
+<area shape="rect" id="node7" href="$kernel__levels_8h.html" title=" " alt="" coords="486,169,633,196"/>
+</map>

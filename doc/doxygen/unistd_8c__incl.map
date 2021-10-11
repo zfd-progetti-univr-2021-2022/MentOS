@@ -1,0 +1,11 @@
+<map id="libc/src/sys/unistd.c" name="libc/src/sys/unistd.c">
+<area shape="rect" id="node1" title="Functions used to manage files." alt="" coords="185,5,334,32"/>
+<area shape="rect" id="node2" href="$unistd_8h.html" title="Functions used to manage files." alt="" coords="155,80,255,107"/>
+<area shape="rect" id="node5" href="$limits_8h.html" title="OS numeric limits." alt="" coords="5,229,76,256"/>
+<area shape="rect" id="node7" href="$string_8h.html" title="String routines." alt="" coords="279,80,349,107"/>
+<area shape="rect" id="node8" href="$stdio_8h.html" title="Standard I/0 functions." alt="" coords="374,80,441,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="157,155,253,181"/>
+<area shape="rect" id="node4" href="$dirent_8h.html" title="Functions used to manage directories." alt="" coords="34,155,133,181"/>
+<area shape="rect" id="node6" href="$stddef_8h.html" title="Define basic data types." alt="" coords="278,229,353,256"/>
+<area shape="rect" id="node9" href="$stdarg_8h.html" title="Contains the macros required to manage variable number of arguments." alt="" coords="429,155,503,181"/>
+</map>

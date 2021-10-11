@@ -1,0 +1,13 @@
+<map id="mentos/inc/fs/vfs.h" name="mentos/inc/fs/vfs.h">
+<area shape="rect" id="node1" title="Headers for Virtual File System (VFS)." alt="" coords="259,5,406,32"/>
+<area shape="rect" id="node2" href="$vfs__types_8h.html" title=" " alt="" coords="211,80,324,107"/>
+<area shape="rect" id="node10" href="$slab_8h.html" title="Functions and structures for managing memory slabs." alt="" coords="397,80,495,107"/>
+<area shape="rect" id="node3" href="$list__head_8h.html" title=" " alt="" coords="335,155,456,181"/>
+<area shape="rect" id="node5" href="$dirent_8h.html" title="Functions used to manage directories." alt="" coords="101,155,199,181"/>
+<area shape="rect" id="node7" href="$bits_2stat_8h.html" title="Defines the structure used by the functiosn fstat(), lstat(), and stat()." alt="" coords="224,155,311,181"/>
+<area shape="rect" id="node9" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="5,155,76,181"/>
+<area shape="rect" id="node4" href="$stddef_8h.html" title="Define basic data types." alt="" coords="302,304,377,331"/>
+<area shape="rect" id="node6" href="$limits_8h.html" title="OS numeric limits." alt="" coords="92,229,163,256"/>
+<area shape="rect" id="node8" href="$time_8h.html" title="Time&#45;related functions." alt="" coords="238,229,302,256"/>
+<area shape="rect" id="node11" href="$gfp_8h.html" title="List of Get Free Pages (GFP) Flags." alt="" coords="531,155,625,181"/>
+</map>

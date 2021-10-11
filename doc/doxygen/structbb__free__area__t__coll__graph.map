@@ -1,0 +1,4 @@
+<map id="bb_free_area_t" name="bb_free_area_t">
+<area shape="rect" id="node1" title="Buddy system descriptor: collection of free page blocks. Each block represents 2^k free contiguous pa..." alt="" coords="5,97,124,124"/>
+<area shape="rect" id="node2" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="24,7,105,33"/>
+</map>

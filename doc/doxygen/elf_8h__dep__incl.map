@@ -1,0 +1,6 @@
+<map id="mentos/inc/elf/elf.h" name="mentos/inc/elf/elf.h">
+<area shape="rect" id="node1" title="Function for multiboot support." alt="" coords="168,5,315,32"/>
+<area shape="rect" id="node2" href="$boot_8c.html" title="Bootloader." alt="" coords="5,87,144,114"/>
+<area shape="rect" id="node3" href="$elf_8c.html" title="Function for multiboot support." alt="" coords="168,87,315,114"/>
+<area shape="rect" id="node4" href="$process_8c.html" title="Process data structures and functions." alt="" coords="339,80,487,121"/>
+</map>

@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['d_5fino_3654',['d_ino',['../structdirent__t.html#a7221e86206b1b271ccc254a9456caade',1,'dirent_t']]],
+  ['d_5fname_3655',['d_name',['../structdirent__t.html#adf0b41c2a382392de0f7237f394262c2',1,'dirent_t']]],
+  ['d_5foff_3656',['d_off',['../structdirent__t.html#acaac487f0402357b7f6ce41fd5eab63f',1,'dirent_t']]],
+  ['d_5freclen_3657',['d_reclen',['../structdirent__t.html#a6c8eda1b1bf8b9ea6a17fabdf39b0b0c',1,'dirent_t']]],
+  ['d_5ftype_3658',['d_type',['../structdirent__t.html#a7f328a69599ee8ff77a9f58e3862a11a',1,'dirent_t']]],
+  ['data_3659',['data',['../structproc__dir__entry__t.html#ae046deddc8825091cb90909c0ecd9047',1,'proc_dir_entry_t::data()'],['../structtimer__list.html#af135d46b30969e13bfa66d6760c795f2',1,'timer_list::data()']]],
+  ['data_5frotate_3660',['data_rotate',['../structvga__mode__t.html#aa7a974b14c55f061b8fb471ca0de107b',1,'vga_mode_t']]],
+  ['deadline_3661',['deadline',['../structsched__entity__t.html#a6486a4267567a1e952b76f2545ab6fb9',1,'sched_entity_t::deadline()'],['../structsched__param__t.html#ad315990a947b2ef6e83fbdc51abc54de',1,'sched_param_t::deadline()']]],
+  ['description_3662',['description',['../structirq__struct__t.html#a717444e18bfb69c249eb67d685c837f0',1,'irq_struct_t']]],
+  ['device_3663',['device',['../structvfs__file__t.html#ae8493d5ae225739425bcd30eadf4e3dd',1,'vfs_file_t']]],
+  ['dir_5fentry_3664',['dir_entry',['../structprocfs__file__t.html#a3739d7ecba07c158d6416ea18db34893',1,'procfs_file_t']]],
+  ['dirty_3665',['dirty',['../structpage__table__entry__t.html#adeb9967c915d0a6d834593d6243dbd4f',1,'page_table_entry_t']]],
+  ['draw_5frect_3666',['draw_rect',['../structvga__ops__t.html#a7183f840f63b464d7cd558b6063c6f99',1,'vga_ops_t']]],
+  ['drives_5faddr_3667',['drives_addr',['../structmultiboot__info__t.html#a80150a92f8a9eae49c0a69633cf79a13',1,'multiboot_info_t']]],
+  ['drives_5flength_3668',['drives_length',['../structmultiboot__info__t.html#a9e8eb68a4c8b543ede4f3f32b1783b2a',1,'multiboot_info_t']]],
+  ['ds_3669',['ds',['../structtss__entry.html#a40bee984aea21eef64e0991260d9e406',1,'tss_entry::ds()'],['../structpt__regs.html#a129d416ac48f47359da1f5d8a18ebbf6',1,'pt_regs::ds()']]],
+  ['dtor_3670',['dtor',['../structkmem__cache__t.html#ab204283dc20bb8a322f0574c58450c5e',1,'kmem_cache_t']]]
+];

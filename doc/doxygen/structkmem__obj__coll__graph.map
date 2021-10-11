@@ -1,0 +1,4 @@
+<map id="kmem_obj" name="kmem_obj">
+<area shape="rect" id="node1" title="Use it to manage cached pages." alt="" coords="5,97,96,124"/>
+<area shape="rect" id="node2" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="10,7,91,33"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="mentos/inc/process/prio.h" name="mentos/inc/process/prio.h">
+<area shape="rect" id="node1" title="Defines processes priority value." alt="" coords="257,5,405,47"/>
+<area shape="rect" id="node2" href="$proc__running_8c_source.html" title=" " alt="" coords="5,95,148,136"/>
+<area shape="rect" id="node3" href="$process_8c.html" title="Process data structures and functions." alt="" coords="172,95,320,136"/>
+<area shape="rect" id="node4" href="$scheduler_8c.html" title="Scheduler structures and functions." alt="" coords="344,95,492,136"/>
+<area shape="rect" id="node5" href="$scheduler__algorithm_8c.html" title="Round Robin algorithm." alt="" coords="517,95,687,136"/>
+</map>

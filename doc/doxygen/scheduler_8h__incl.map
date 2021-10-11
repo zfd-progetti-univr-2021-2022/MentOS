@@ -1,0 +1,32 @@
+<map id="mentos/inc/process/scheduler.h" name="mentos/inc/process/scheduler.h">
+<area shape="rect" id="node1" title="Scheduler structures and functions." alt="" coords="5,5,153,47"/>
+<area shape="rect" id="node2" href="$list__head_8h.html" title=" " alt="" coords="577,393,699,420"/>
+<area shape="rect" id="node3" href="$stddef_8h.html" title="Define basic data types." alt="" coords="421,543,495,569"/>
+<area shape="rect" id="node4" href="$process_8h.html" title="Process data structures and functions." alt="" coords="698,95,837,121"/>
+<area shape="rect" id="node5" href="$paging_8h.html" title="Implementation of a memory paging management." alt="" coords="1361,169,1477,196"/>
+<area shape="rect" id="node20" href="$mentos_2inc_2system_2signal_8h.html" title="Signals definition." alt="" coords="631,169,757,196"/>
+<area shape="rect" id="node30" href="$fpu_8h.html" title="Floating Point Unit (FPU)." alt="" coords="783,169,893,196"/>
+<area shape="rect" id="node6" href="$zone__allocator_8h.html" title="Implementation of the Zone Allocator." alt="" coords="1252,244,1419,271"/>
+<area shape="rect" id="node14" href="$boot_8h.html" title="Bootloader structures." alt="" coords="1655,319,1717,345"/>
+<area shape="rect" id="node18" href="$proc__access_8h.html" title="Set of functions and flags used to manage processors registers." alt="" coords="1609,244,1723,271"/>
+<area shape="rect" id="node19" href="$kernel_8h.html" title="Kernel generic data structure and functions." alt="" coords="878,319,953,345"/>
+<area shape="rect" id="node7" href="$gfp_8h.html" title="List of Get Free Pages (GFP) Flags." alt="" coords="1482,393,1575,420"/>
+<area shape="rect" id="node8" href="$math_8h.html" title="Mathematical constants and functions." alt="" coords="1511,319,1579,345"/>
+<area shape="rect" id="node9" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="1003,468,1073,495"/>
+<area shape="rect" id="node10" href="$bitops_8h.html" title="Bitmasks functions." alt="" coords="1263,319,1363,345"/>
+<area shape="rect" id="node11" href="$stdatomic_8h.html" title=" " alt="" coords="725,393,852,420"/>
+<area shape="rect" id="node16" href="$buddysystem_8h.html" title="Buddy System." alt="" coords="1027,319,1187,345"/>
+<area shape="rect" id="node17" href="$slab_8h.html" title="Functions and structures for managing memory slabs." alt="" coords="1387,319,1486,345"/>
+<area shape="rect" id="node12" href="$stdbool_8h.html" title="Defines the boolean values." alt="" coords="685,468,767,495"/>
+<area shape="rect" id="node13" href="$compiler_8h.html" title=" " alt="" coords="792,468,911,495"/>
+<area shape="rect" id="node15" href="$multiboot_8h.html" title="Data structures used for multiboot." alt="" coords="1613,393,1711,420"/>
+<area shape="rect" id="node21" href="$spinlock_8h.html" title=" " alt="" coords="636,244,752,271"/>
+<area shape="rect" id="node22" href="$syscall_8h.html" title="System Call handler definition." alt="" coords="378,244,509,271"/>
+<area shape="rect" id="node23" href="$syscall__types_8h.html" title="System Call numbers." alt="" coords="305,319,480,345"/>
+<area shape="rect" id="node24" href="$vfs__types_8h.html" title=" " alt="" coords="168,319,281,345"/>
+<area shape="rect" id="node25" href="$dirent_8h.html" title="Functions used to manage directories." alt="" coords="175,393,274,420"/>
+<area shape="rect" id="node29" title=" " alt="" coords="505,319,601,345"/>
+<area shape="rect" id="node27" href="$bits_2stat_8h.html" title="Defines the structure used by the functiosn fstat(), lstat(), and stat()." alt="" coords="345,393,432,420"/>
+<area shape="rect" id="node26" href="$limits_8h.html" title="OS numeric limits." alt="" coords="189,468,260,495"/>
+<area shape="rect" id="node28" href="$time_8h.html" title="Time&#45;related functions." alt="" coords="426,468,490,495"/>
+</map>

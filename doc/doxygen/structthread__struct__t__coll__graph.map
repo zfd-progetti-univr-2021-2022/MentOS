@@ -1,0 +1,11 @@
+<map id="thread_struct_t" name="thread_struct_t">
+<area shape="rect" id="node1" title="Stores the status of CPU and FPU registers." alt="" coords="58,288,178,315"/>
+<area shape="rect" id="node2" href="$structpt__regs.html" title="Interrupt stack frame." alt="" coords="28,184,99,211"/>
+<area shape="rect" id="node3" href="$unionsavefpu.html" title="Stores FPU registers details." alt="" coords="135,184,210,211"/>
+<area shape="rect" id="node4" href="$structsavexmm.html" title="Stores the XMM context." alt="" coords="200,95,287,121"/>
+<area shape="rect" id="node5" href="$structfpacc87.html" title="Contents of each floating point accumulator." alt="" coords="111,5,184,32"/>
+<area shape="rect" id="node8" href="$structsave87.html" title="Floating point context." alt="" coords="83,95,153,121"/>
+<area shape="rect" id="node6" href="$structxmmacc.html" title="Contents of each SSE extended accumulator." alt="" coords="332,5,411,32"/>
+<area shape="rect" id="node7" href="$structenvxmm.html" title="Stores the XMM environment." alt="" coords="227,5,307,32"/>
+<area shape="rect" id="node9" href="$structenv87.html" title="Environment information of floating point unit." alt="" coords="5,5,68,32"/>
+</map>

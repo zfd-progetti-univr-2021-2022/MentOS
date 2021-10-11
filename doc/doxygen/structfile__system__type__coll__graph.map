@@ -1,0 +1,8 @@
+<map id="file_system_type" name="file_system_type">
+<area shape="rect" id="node1" title="Filesystem information." alt="" coords="5,379,139,405"/>
+<area shape="rect" id="node2" href="$structvfs__file__t.html" title="Data structure that contains information about the mounted filesystems." alt="" coords="109,187,190,213"/>
+<area shape="rect" id="node4" href="$structvfs__file__operations__t.html" title="Set of functions used to perform operations on files." alt="" coords="167,379,324,405"/>
+<area shape="rect" id="node3" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="9,96,90,123"/>
+<area shape="rect" id="node5" href="$structvfs__sys__operations__t.html" title="Set of functions used to perform operations on filesystem." alt="" coords="171,96,330,123"/>
+<area shape="rect" id="node6" href="$structstat__t.html" title="Data structure which contains information about a file." alt="" coords="221,5,280,32"/>
+</map>

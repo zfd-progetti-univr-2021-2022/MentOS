@@ -1,0 +1,13 @@
+<map id="libc/src/unistd/stat.c" name="libc/src/unistd/stat.c">
+<area shape="rect" id="node1" title="Stat functions." alt="" coords="168,5,320,32"/>
+<area shape="rect" id="node2" href="$unistd_8h.html" title="Functions used to manage files." alt="" coords="39,155,139,181"/>
+<area shape="rect" id="node7" href="$syscall__types_8h.html" title="System Call numbers." alt="" coords="78,80,253,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="277,80,371,107"/>
+<area shape="rect" id="node9" href="$sys_2stat_8h.html" title="Stat functions." alt="" coords="396,80,481,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,229,101,256"/>
+<area shape="rect" id="node4" href="$dirent_8h.html" title="Functions used to manage directories." alt="" coords="125,229,224,256"/>
+<area shape="rect" id="node6" href="$stddef_8h.html" title="Define basic data types." alt="" coords="275,304,349,331"/>
+<area shape="rect" id="node5" href="$limits_8h.html" title="OS numeric limits." alt="" coords="139,304,210,331"/>
+<area shape="rect" id="node10" href="$bits_2stat_8h.html" title="Defines the structure used by the functiosn fstat(), lstat(), and stat()." alt="" coords="350,155,437,181"/>
+<area shape="rect" id="node11" href="$time_8h.html" title="Time&#45;related functions." alt="" coords="400,229,464,256"/>
+</map>

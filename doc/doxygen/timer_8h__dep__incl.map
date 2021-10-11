@@ -1,0 +1,11 @@
+<map id="mentos/inc/hardware/timer.h" name="mentos/inc/hardware/timer.h">
+<area shape="rect" id="node1" title="Programmable Interval Timer (PIT) definitions." alt="" coords="624,5,783,47"/>
+<area shape="rect" id="node2" href="$timer_8c.html" title="Timer implementation." alt="" coords="5,95,164,136"/>
+<area shape="rect" id="node3" href="$proc__system_8c.html" title="Contains callbacks for procfs system files." alt="" coords="188,95,331,136"/>
+<area shape="rect" id="node4" href="$kernel_8c.html" title="Kernel main function." alt="" coords="355,102,505,129"/>
+<area shape="rect" id="node5" href="$mentos_2src_2klib_2time_8c.html" title="Clock functions." alt="" coords="529,102,696,129"/>
+<area shape="rect" id="node6" href="$process_8c.html" title="Process data structures and functions." alt="" coords="720,95,868,136"/>
+<area shape="rect" id="node7" href="$scheduler_8c.html" title="Scheduler structures and functions." alt="" coords="892,95,1040,136"/>
+<area shape="rect" id="node8" href="$scheduler__algorithm_8c.html" title="Round Robin algorithm." alt="" coords="1065,95,1235,136"/>
+<area shape="rect" id="node9" href="$syscall_8c.html" title="System Call management functions." alt="" coords="1260,102,1467,129"/>
+</map>

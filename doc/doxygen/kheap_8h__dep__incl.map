@@ -1,0 +1,11 @@
+<map id="mentos/inc/mem/kheap.h" name="mentos/inc/mem/kheap.h">
+<area shape="rect" id="node1" title="Interface for kernel heap functions, also provides a placement malloc() for use before the heap is in..." alt="" coords="641,5,829,32"/>
+<area shape="rect" id="node2" href="$initrd_8c.html" title="Headers of functions for initrd filesystem." alt="" coords="5,87,164,114"/>
+<area shape="rect" id="node3" href="$mentos_2src_2fs_2stat_8c.html" title="Stat functions." alt="" coords="188,87,339,114"/>
+<area shape="rect" id="node4" href="$timer_8c.html" title="Timer implementation." alt="" coords="363,80,521,121"/>
+<area shape="rect" id="node5" href="$mentos_2src_2klib_2string_8c.html" title="String routines." alt="" coords="545,87,720,114"/>
+<area shape="rect" id="node6" href="$kheap_8c.html" title=" " alt="" coords="745,87,931,114"/>
+<area shape="rect" id="node7" href="$paging_8c.html" title="Implementation of a memory paging management." alt="" coords="956,87,1147,114"/>
+<area shape="rect" id="node8" href="$scheduler_8c.html" title="Scheduler structures and functions." alt="" coords="1171,80,1319,121"/>
+<area shape="rect" id="node9" href="$syscall_8c.html" title="System Call management functions." alt="" coords="1343,87,1549,114"/>
+</map>

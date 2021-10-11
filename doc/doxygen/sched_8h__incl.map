@@ -1,0 +1,7 @@
+<map id="libc/inc/sched.h" name="libc/inc/sched.h">
+<area shape="rect" id="node1" title="Structures and functions for managing the scheduler." alt="" coords="96,5,219,32"/>
+<area shape="rect" id="node2" href="$libc_2inc_2sys_2types_8h.html" title="Collection of Kernel datatype." alt="" coords="5,80,101,107"/>
+<area shape="rect" id="node3" href="$time_8h.html" title="Time&#45;related functions." alt="" coords="125,80,189,107"/>
+<area shape="rect" id="node5" href="$stdbool_8h.html" title="Defines the boolean values." alt="" coords="213,80,296,107"/>
+<area shape="rect" id="node4" href="$stddef_8h.html" title="Define basic data types." alt="" coords="120,155,195,181"/>
+</map>

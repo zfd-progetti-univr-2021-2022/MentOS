@@ -1,0 +1,12 @@
+<map id="mentos/inc/io/video.h" name="mentos/inc/io/video.h">
+<area shape="rect" id="node1" title="Video functions and costants." alt="" coords="706,5,869,32"/>
+<area shape="rect" id="node2" href="$fdc_8c.html" title="Floppy driver controller handling." alt="" coords="5,80,148,121"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html" title="Keyboard handling." alt="" coords="172,80,333,121"/>
+<area shape="rect" id="node4" href="$proc__video_8c_source.html" title=" " alt="" coords="357,80,500,121"/>
+<area shape="rect" id="node5" href="$mentos_2src_2io_2stdio_8c.html" title="Standard I/0 functions." alt="" coords="525,87,682,114"/>
+<area shape="rect" id="node6" href="$video_8c.html" title="Video functions and costants." alt="" coords="707,87,868,114"/>
+<area shape="rect" id="node7" href="$kernel_8c.html" title="Kernel main function." alt="" coords="893,87,1042,114"/>
+<area shape="rect" id="node8" href="$mentos_2src_2klib_2vsprintf_8c.html" title="Print formatting routines." alt="" coords="1066,87,1253,114"/>
+<area shape="rect" id="node9" href="$mentos_2src_2misc_2debug_8c.html" title="Debugging primitives." alt="" coords="1277,87,1461,114"/>
+<area shape="rect" id="node10" href="$printk_8c.html" title="Functions for managing the kernel messages." alt="" coords="1485,87,1684,114"/>
+</map>

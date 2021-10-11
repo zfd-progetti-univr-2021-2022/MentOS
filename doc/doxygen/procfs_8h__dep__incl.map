@@ -1,0 +1,9 @@
+<map id="mentos/inc/fs/procfs.h" name="mentos/inc/fs/procfs.h">
+<area shape="rect" id="node1" title="Proc file system public functions and structures." alt="" coords="435,5,602,32"/>
+<area shape="rect" id="node2" href="$procfs_8c.html" title="Proc file system implementation." alt="" coords="5,87,171,114"/>
+<area shape="rect" id="node3" href="$vfs_8c.html" title="Headers for Virtual File System (VFS)." alt="" coords="195,87,341,114"/>
+<area shape="rect" id="node4" href="$proc__running_8c_source.html" title=" " alt="" coords="365,80,507,121"/>
+<area shape="rect" id="node5" href="$proc__system_8c.html" title="Contains callbacks for procfs system files." alt="" coords="531,80,674,121"/>
+<area shape="rect" id="node6" href="$proc__video_8c_source.html" title=" " alt="" coords="698,80,841,121"/>
+<area shape="rect" id="node7" href="$kernel_8c.html" title="Kernel main function." alt="" coords="865,87,1015,114"/>
+</map>

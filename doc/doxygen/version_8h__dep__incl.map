@@ -1,0 +1,6 @@
+<map id="mentos/inc/version.h" name="mentos/inc/version.h">
+<area shape="rect" id="node1" title="Version information." alt="" coords="168,5,327,32"/>
+<area shape="rect" id="node2" href="$proc__system_8c.html" title="Contains callbacks for procfs system files." alt="" coords="5,80,148,121"/>
+<area shape="rect" id="node3" href="$kernel_8c.html" title="Kernel main function." alt="" coords="173,87,322,114"/>
+<area shape="rect" id="node4" href="$mentos_2src_2sys_2utsname_8c.html" title="Functions used to provide information about the machine &amp; OS." alt="" coords="346,87,538,114"/>
+</map>

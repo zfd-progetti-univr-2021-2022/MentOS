@@ -1,0 +1,5 @@
+<map id="mentos/inc/descriptor_tables/isr.h" name="mentos/inc/descriptor_tables/isr.h">
+<area shape="rect" id="node1" title="Data structures concerning the Interrupt Service Routines (ISRs)." alt="" coords="5,5,168,47"/>
+<area shape="rect" id="node2" href="$kernel_8h.html" title="Kernel generic data structure and functions." alt="" coords="49,95,124,121"/>
+<area shape="rect" id="node3" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="51,169,122,196"/>
+</map>

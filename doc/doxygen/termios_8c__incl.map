@@ -1,0 +1,8 @@
+<map id="libc/src/termios.c" name="libc/src/termios.c">
+<area shape="rect" id="node1" title=" " alt="" coords="248,5,381,32"/>
+<area shape="rect" id="node2" href="$termios_8h.html" title="Defines the termios functions." alt="" coords="41,80,125,107"/>
+<area shape="rect" id="node4" href="$syscall__types_8h.html" title="System Call numbers." alt="" coords="149,80,323,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="347,80,442,107"/>
+<area shape="rect" id="node6" href="$ioctls_8h.html" title="Input/Output ConTroL (IOCTL) numbers." alt="" coords="466,80,563,107"/>
+<area shape="rect" id="node3" href="$termios-struct_8h.html" title="Definition of the termios structure." alt="" coords="5,155,160,181"/>
+</map>

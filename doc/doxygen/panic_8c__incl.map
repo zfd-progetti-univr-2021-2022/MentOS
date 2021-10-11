@@ -1,0 +1,6 @@
+<map id="mentos/src/system/panic.c" name="mentos/src/system/panic.c">
+<area shape="rect" id="node1" title="Functions used to manage kernel panic." alt="" coords="37,5,233,32"/>
+<area shape="rect" id="node2" href="$panic_8h.html" title="Functions used to manage kernel panic." alt="" coords="5,80,127,107"/>
+<area shape="rect" id="node3" href="$mentos_2inc_2misc_2debug_8h.html" title="Debugging primitives." alt="" coords="151,80,261,107"/>
+<area shape="rect" id="node4" href="$kernel__levels_8h.html" title=" " alt="" coords="133,155,279,181"/>
+</map>

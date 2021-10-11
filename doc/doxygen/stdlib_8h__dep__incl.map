@@ -1,0 +1,10 @@
+<map id="libc/inc/stdlib.h" name="libc/inc/stdlib.h">
+<area shape="rect" id="node1" title="Useful generic functions and macros." alt="" coords="471,5,591,32"/>
+<area shape="rect" id="node2" href="$libc_2src_2assert_8c.html" title=" " alt="" coords="5,80,128,107"/>
+<area shape="rect" id="node3" href="$libc__start_8c.html" title="Contains the programs initialization procedure." alt="" coords="153,80,295,107"/>
+<area shape="rect" id="node4" href="$libc_2src_2libgen_8c.html" title="String routines." alt="" coords="320,80,443,107"/>
+<area shape="rect" id="node5" href="$setenv_8c.html" title="Defines the functions used to manipulate the environmental variables." alt="" coords="467,80,594,107"/>
+<area shape="rect" id="node6" href="$stdlib_8c.html" title=" " alt="" coords="618,80,737,107"/>
+<area shape="rect" id="node7" href="$libc_2src_2string_8c.html" title="String routines." alt="" coords="761,80,881,107"/>
+<area shape="rect" id="node8" href="$exec_8c.html" title=" " alt="" coords="905,80,1063,107"/>
+</map>

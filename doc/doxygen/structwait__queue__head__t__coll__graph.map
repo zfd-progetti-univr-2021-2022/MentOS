@@ -1,0 +1,4 @@
+<map id="wait_queue_head_t" name="wait_queue_head_t">
+<area shape="rect" id="node1" title="Head of the waiting queue." alt="" coords="5,97,153,124"/>
+<area shape="rect" id="node2" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="39,7,120,33"/>
+</map>

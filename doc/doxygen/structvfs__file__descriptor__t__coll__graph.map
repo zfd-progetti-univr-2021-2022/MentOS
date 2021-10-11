@@ -1,0 +1,8 @@
+<map id="vfs_file_descriptor_t" name="vfs_file_descriptor_t">
+<area shape="rect" id="node1" title="Data structure containing information about an open file." alt="" coords="5,379,159,405"/>
+<area shape="rect" id="node2" href="$structvfs__file__t.html" title="Data structure that contains information about the mounted filesystems." alt="" coords="141,187,223,213"/>
+<area shape="rect" id="node4" href="$structvfs__file__operations__t.html" title="Set of functions used to perform operations on files." alt="" coords="193,379,350,405"/>
+<area shape="rect" id="node3" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="41,96,123,123"/>
+<area shape="rect" id="node5" href="$structvfs__sys__operations__t.html" title="Set of functions used to perform operations on filesystem." alt="" coords="204,96,363,123"/>
+<area shape="rect" id="node6" href="$structstat__t.html" title="Data structure which contains information about a file." alt="" coords="254,5,313,32"/>
+</map>

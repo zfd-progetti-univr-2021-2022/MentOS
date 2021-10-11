@@ -1,0 +1,5 @@
+<map id="sighand_t" name="sighand_t">
+<area shape="rect" id="node1" title="Describes how each signal must be handled." alt="" coords="9,184,95,211"/>
+<area shape="rect" id="node2" href="$structsigaction__t.html" title="Holds the information on how to handle a specific signal." alt="" coords="5,95,99,121"/>
+<area shape="rect" id="node3" href="$structsigset__t.html" title="Structure used to mask and unmask signals." alt="" coords="15,5,89,32"/>
+</map>

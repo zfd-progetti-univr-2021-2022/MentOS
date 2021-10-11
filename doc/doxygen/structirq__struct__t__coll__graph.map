@@ -1,0 +1,5 @@
+<map id="irq_struct_t" name="irq_struct_t">
+<area shape="rect" id="node1" title="Shared interrupt handlers, stored into a double&#45;linked list." alt="" coords="39,97,133,124"/>
+<area shape="rect" id="node2" href="$structpt__regs.html" title="Interrupt stack frame." alt="" coords="5,7,76,33"/>
+<area shape="rect" id="node3" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="100,7,181,33"/>
+</map>

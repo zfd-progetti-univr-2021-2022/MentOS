@@ -1,0 +1,10 @@
+<map id="libc/src/unistd/chdir.c" name="libc/src/unistd/chdir.c">
+<area shape="rect" id="node1" title=" " alt="" coords="257,5,415,32"/>
+<area shape="rect" id="node2" href="$unistd_8h.html" title="Functions used to manage files." alt="" coords="125,80,225,107"/>
+<area shape="rect" id="node7" href="$syscall__types_8h.html" title="System Call numbers." alt="" coords="249,80,423,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="447,80,542,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,101,181"/>
+<area shape="rect" id="node4" href="$dirent_8h.html" title="Functions used to manage directories." alt="" coords="125,155,224,181"/>
+<area shape="rect" id="node6" href="$stddef_8h.html" title="Define basic data types." alt="" coords="224,229,299,256"/>
+<area shape="rect" id="node5" href="$limits_8h.html" title="OS numeric limits." alt="" coords="129,229,199,256"/>
+</map>

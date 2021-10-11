@@ -1,0 +1,31 @@
+<map id="task_struct" name="task_struct">
+<area shape="rect" id="node1" title="this is our task object. Every process in the system has this, and it holds a lot of information...." alt="" coords="1089,520,1184,547"/>
+<area shape="rect" id="node2" href="$structsighand__t.html" title="Describes how each signal must be handled." alt="" coords="864,147,949,173"/>
+<area shape="rect" id="node3" href="$structsigaction__t.html" title="Holds the information on how to handle a specific signal." alt="" coords="568,147,661,173"/>
+<area shape="rect" id="node4" href="$structsigset__t.html" title="Structure used to mask and unmask signals." alt="" coords="288,147,361,173"/>
+<area shape="rect" id="node20" href="$structsigpending__t.html" title="Keeps information of pending signals." alt="" coords="562,197,667,224"/>
+<area shape="rect" id="node5" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="284,489,365,516"/>
+<area shape="rect" id="node6" href="$structtimer__list.html" title="Represents the request to execute a function in the future, also known as timer." alt="" coords="573,428,657,455"/>
+<area shape="rect" id="node8" href="$structtimer__vec.html" title="Normal timer vector." alt="" coords="571,293,658,320"/>
+<area shape="rect" id="node9" href="$structtimer__vec__root.html" title="Root timer vector." alt="" coords="555,369,675,396"/>
+<area shape="rect" id="node11" href="$structvfs__file__t.html" title="Data structure that contains information about the mounted filesystems." alt="" coords="574,713,655,740"/>
+<area shape="rect" id="node15" href="$structmm__struct__t.html" title="Memory Descriptor, used to store details about the memory of a user process." alt="" coords="563,887,667,913"/>
+<area shape="rect" id="node18" href="$structvm__area__struct__t.html" title="Virtual Memory Area, used to store details of a process segment." alt="" coords="839,837,974,864"/>
+<area shape="rect" id="node7" href="$structtvec__base__s.html" title="Contains all the timers of a single CPU." alt="" coords="855,344,958,371"/>
+<area shape="rect" id="node10" href="$structvfs__file__descriptor__t.html" title="Data structure containing information about an open file." alt="" coords="830,724,983,751"/>
+<area shape="rect" id="node12" href="$structvfs__file__operations__t.html" title="Set of functions used to perform operations on files." alt="" coords="828,605,985,632"/>
+<area shape="rect" id="node13" href="$structvfs__sys__operations__t.html" title="Set of functions used to perform operations on filesystem." alt="" coords="245,827,404,853"/>
+<area shape="rect" id="node14" href="$structstat__t.html" title="Data structure which contains information about a file." alt="" coords="41,827,100,853"/>
+<area shape="rect" id="node16" href="$structpage__directory__t.html" title="A page directory." alt="" coords="259,932,390,959"/>
+<area shape="rect" id="node17" href="$structpage__dir__entry__t.html" title="An entry of a page directory." alt="" coords="5,932,136,959"/>
+<area shape="rect" id="node19" href="$structsched__entity__t.html" title="This structure is used to track the statistics of a process." alt="" coords="848,988,965,1015"/>
+<area shape="rect" id="node21" href="$structthread__struct__t.html" title="Stores the status of CPU and FPU registers." alt="" coords="847,1039,967,1065"/>
+<area shape="rect" id="node22" href="$structpt__regs.html" title="Interrupt stack frame." alt="" coords="579,1009,650,1036"/>
+<area shape="rect" id="node23" href="$unionsavefpu.html" title="Stores FPU registers details." alt="" coords="577,1060,652,1087"/>
+<area shape="rect" id="node24" href="$structsavexmm.html" title="Stores the XMM context." alt="" coords="281,1049,368,1076"/>
+<area shape="rect" id="node25" href="$structfpacc87.html" title="Contents of each floating point accumulator." alt="" coords="34,1104,107,1131"/>
+<area shape="rect" id="node28" href="$structsave87.html" title="Floating point context." alt="" coords="290,1127,359,1153"/>
+<area shape="rect" id="node26" href="$structxmmacc.html" title="Contents of each SSE extended accumulator." alt="" coords="31,1036,110,1063"/>
+<area shape="rect" id="node27" href="$structenvxmm.html" title="Stores the XMM environment." alt="" coords="31,985,111,1012"/>
+<area shape="rect" id="node29" href="$structenv87.html" title="Environment information of floating point unit." alt="" coords="39,1172,102,1199"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="mentos/inc/descriptor_tables/gdt.h" name="mentos/inc/descriptor_tables/gdt.h">
+<area shape="rect" id="node1" title="Data structures concerning the Global Descriptor Table (GDT)." alt="" coords="285,5,448,47"/>
+<area shape="rect" id="node2" href="$gdt_8c.html" title="Functions which manage the Global Descriptor Table (GDT)." alt="" coords="5,95,168,136"/>
+<area shape="rect" id="node3" href="$idt_8c.html" title="Functions which manage the Interrupt Descriptor Table (IDT)." alt="" coords="192,95,355,136"/>
+<area shape="rect" id="node4" href="$tss_8c.html" title=" " alt="" coords="379,95,541,136"/>
+<area shape="rect" id="node5" href="$kernel_8c.html" title="Kernel main function." alt="" coords="565,102,715,129"/>
+</map>

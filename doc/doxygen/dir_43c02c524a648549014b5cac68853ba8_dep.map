@@ -1,0 +1,12 @@
+<map id="libc/inc" name="libc/inc">
+<area shape="rect" id="node2" href="dir_1c621b73e046407f48a729992e3488fd.html" title="bits" alt="" coords="295,255,367,303"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000002_000003.html" title="2" alt="" coords="319,227,329,242"/>
+<area shape="rect" id="node5" href="dir_0f8b9e2197a45f21354448813bb08b80.html" title="sys" alt="" coords="325,159,397,207"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000002_000004.html" title="3" alt="" coords="365,133,374,148"/>
+<area shape="rect" id="node3" href="dir_18e997df32313b923dfa034631f36e47.html" title="io" alt="" coords="229,63,301,111"/>
+<area shape="rect" id="node4" href="dir_78181ae04ea34ba7466eeff4c83d57e2.html" title="ipc" alt="" coords="133,63,205,111"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000004_000003.html" title="1" alt="" coords="347,233,357,247"/>
+<area shape="rect" id="node6" href="dir_1e2ebe668f0dad727219316cc29c14bb.html" title="system" alt="" coords="37,63,109,111"/>
+<area shape="rect" id="clust2" href="dir_43c02c524a648549014b5cac68853ba8.html" alt="" coords="27,52,408,313"/>
+<area shape="rect" id="clust1" href="dir_fc1eb218ab426e5adb60367f98438da0.html" title="libc" alt="" coords="16,16,419,324"/>
+</map>

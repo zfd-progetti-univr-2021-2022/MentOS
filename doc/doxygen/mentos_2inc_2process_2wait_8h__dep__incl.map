@@ -1,0 +1,9 @@
+<map id="mentos/inc/process/wait.h" name="mentos/inc/process/wait.h">
+<area shape="rect" id="node1" title=" " alt="" coords="452,5,600,47"/>
+<area shape="rect" id="node2" href="$timer_8c.html" title="Timer implementation." alt="" coords="5,95,164,136"/>
+<area shape="rect" id="node3" href="$process_8c.html" title="Process data structures and functions." alt="" coords="188,95,336,136"/>
+<area shape="rect" id="node4" href="$scheduler_8c.html" title="Scheduler structures and functions." alt="" coords="360,95,508,136"/>
+<area shape="rect" id="node5" href="$scheduler__algorithm_8c.html" title="Round Robin algorithm." alt="" coords="533,95,703,136"/>
+<area shape="rect" id="node6" href="$wait_8c.html" title="wait functions." alt="" coords="728,95,876,136"/>
+<area shape="rect" id="node7" href="$mentos_2src_2system_2signal_8c.html" title="Signals definition." alt="" coords="901,102,1101,129"/>
+</map>

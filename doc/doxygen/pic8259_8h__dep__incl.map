@@ -1,0 +1,9 @@
+<map id="mentos/inc/hardware/pic8259.h" name="mentos/inc/hardware/pic8259.h">
+<area shape="rect" id="node1" title="Pic8259 definitions." alt="" coords="457,5,615,47"/>
+<area shape="rect" id="node2" href="$interrupt_8c.html" title="Functions which manage the Interrupt Service Routines (ISRs)." alt="" coords="5,95,168,136"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html" title="Keyboard handling." alt="" coords="193,95,354,136"/>
+<area shape="rect" id="node4" href="$rtc_8c.html" title="Real Time Clock (RTC) driver." alt="" coords="378,95,521,136"/>
+<area shape="rect" id="node5" href="$pic8259_8c.html" title="pic8259 definitions." alt="" coords="545,95,703,136"/>
+<area shape="rect" id="node6" href="$timer_8c.html" title="Timer implementation." alt="" coords="727,95,886,136"/>
+<area shape="rect" id="node7" href="$kernel_8c.html" title="Kernel main function." alt="" coords="911,102,1060,129"/>
+</map>

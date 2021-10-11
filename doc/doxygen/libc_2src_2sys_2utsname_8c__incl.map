@@ -1,0 +1,7 @@
+<map id="libc/src/sys/utsname.c" name="libc/src/sys/utsname.c">
+<area shape="rect" id="node1" title="Functions used to provide information about the machine &amp; OS." alt="" coords="230,5,397,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,123,107"/>
+<area shape="rect" id="node3" href="$syscall__types_8h.html" title="System Call numbers." alt="" coords="147,80,322,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="346,80,441,107"/>
+<area shape="rect" id="node5" href="$stddef_8h.html" title="Define basic data types." alt="" coords="465,80,540,107"/>
+</map>

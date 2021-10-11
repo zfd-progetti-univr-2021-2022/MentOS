@@ -1,0 +1,4 @@
+<map id="kmem_cache_t" name="kmem_cache_t">
+<area shape="rect" id="node1" title="Stores the information of a cache." alt="" coords="5,141,127,168"/>
+<area shape="rect" id="node2" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="25,7,107,33"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="rbtree_iter_t" name="rbtree_iter_t">
+<area shape="rect" id="node1" title="Stores information for iterating a rbtree." alt="" coords="10,187,113,213"/>
+<area shape="rect" id="node2" href="$structrbtree__node__t.html" title="Stores information of a node." alt="" coords="5,5,117,32"/>
+<area shape="rect" id="node3" href="$structrbtree__t.html" title="Stores information of a rbtree." alt="" coords="102,96,175,123"/>
+</map>

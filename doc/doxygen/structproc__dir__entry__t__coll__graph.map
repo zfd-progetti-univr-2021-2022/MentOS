@@ -1,0 +1,8 @@
+<map id="proc_dir_entry_t" name="proc_dir_entry_t">
+<area shape="rect" id="node1" title="Stores information about a procfs directory entry." alt="" coords="145,289,271,316"/>
+<area shape="rect" id="node2" href="$structvfs__file__operations__t.html" title="Set of functions used to perform operations on files." alt="" coords="339,96,496,123"/>
+<area shape="rect" id="node3" href="$structvfs__file__t.html" title="Data structure that contains information about the mounted filesystems." alt="" coords="426,289,507,316"/>
+<area shape="rect" id="node4" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="601,96,682,123"/>
+<area shape="rect" id="node5" href="$structvfs__sys__operations__t.html" title="Set of functions used to perform operations on filesystem." alt="" coords="14,96,173,123"/>
+<area shape="rect" id="node6" href="$structstat__t.html" title="Data structure which contains information about a file." alt="" coords="64,5,123,32"/>
+</map>

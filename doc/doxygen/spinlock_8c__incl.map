@@ -1,0 +1,8 @@
+<map id="mentos/src/klib/spinlock.c" name="mentos/src/klib/spinlock.c">
+<area shape="rect" id="node1" title=" " alt="" coords="47,5,237,32"/>
+<area shape="rect" id="node2" href="$spinlock_8h.html" title=" " alt="" coords="84,80,200,107"/>
+<area shape="rect" id="node3" href="$stdatomic_8h.html" title=" " alt="" coords="79,155,205,181"/>
+<area shape="rect" id="node4" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="5,229,76,256"/>
+<area shape="rect" id="node5" href="$stdbool_8h.html" title="Defines the boolean values." alt="" coords="101,229,183,256"/>
+<area shape="rect" id="node6" href="$compiler_8h.html" title=" " alt="" coords="208,229,327,256"/>
+</map>

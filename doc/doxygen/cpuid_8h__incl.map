@@ -1,0 +1,5 @@
+<map id="mentos/inc/hardware/cpuid.h" name="mentos/inc/hardware/cpuid.h">
+<area shape="rect" id="node1" title="CPUID definitions." alt="" coords="5,5,164,47"/>
+<area shape="rect" id="node2" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="49,169,120,196"/>
+<area shape="rect" id="node3" href="$kernel_8h.html" title="Kernel generic data structure and functions." alt="" coords="85,95,159,121"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="mentos/inc/mem/paging.h" name="mentos/inc/mem/paging.h">
+<area shape="rect" id="node1" title="Implementation of a memory paging management." alt="" coords="633,5,825,32"/>
+<area shape="rect" id="node2" href="$zone__allocator_8h.html" title="Implementation of the Zone Allocator." alt="" coords="375,80,541,107"/>
+<area shape="rect" id="node7" href="$stddef_8h.html" title="Define basic data types." alt="" coords="122,304,197,331"/>
+<area shape="rect" id="node12" href="$boot_8h.html" title="Bootloader structures." alt="" coords="756,155,819,181"/>
+<area shape="rect" id="node16" href="$proc__access_8h.html" title="Set of functions and flags used to manage processors registers." alt="" coords="767,80,880,107"/>
+<area shape="rect" id="node17" href="$kernel_8h.html" title="Kernel generic data structure and functions." alt="" coords="905,80,979,107"/>
+<area shape="rect" id="node3" href="$gfp_8h.html" title="List of Get Free Pages (GFP) Flags." alt="" coords="29,229,122,256"/>
+<area shape="rect" id="node4" href="$math_8h.html" title="Mathematical constants and functions." alt="" coords="203,155,271,181"/>
+<area shape="rect" id="node5" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="725,304,796,331"/>
+<area shape="rect" id="node6" href="$list__head_8h.html" title=" " alt="" coords="277,229,399,256"/>
+<area shape="rect" id="node8" href="$bitops_8h.html" title="Bitmasks functions." alt="" coords="295,155,395,181"/>
+<area shape="rect" id="node9" href="$stdatomic_8h.html" title=" " alt="" coords="503,229,629,256"/>
+<area shape="rect" id="node14" href="$buddysystem_8h.html" title="Buddy System." alt="" coords="521,155,681,181"/>
+<area shape="rect" id="node15" href="$slab_8h.html" title="Functions and structures for managing memory slabs." alt="" coords="79,155,178,181"/>
+<area shape="rect" id="node10" href="$stdbool_8h.html" title="Defines the boolean values." alt="" coords="571,304,654,331"/>
+<area shape="rect" id="node11" href="$compiler_8h.html" title=" " alt="" coords="429,304,548,331"/>
+<area shape="rect" id="node13" href="$multiboot_8h.html" title="Data structures used for multiboot." alt="" coords="756,229,853,256"/>
+</map>

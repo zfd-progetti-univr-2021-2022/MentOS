@@ -1,0 +1,7 @@
+<map id="mentos/inc/drivers/keyboard/keyboard.h" name="mentos/inc/drivers/keyboard/keyboard.h">
+<area shape="rect" id="node1" title="Definitions about the keyboard." alt="" coords="267,5,430,47"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html" title="Keyboard handling." alt="" coords="5,95,167,136"/>
+<area shape="rect" id="node3" href="$proc__video_8c_source.html" title=" " alt="" coords="191,95,333,136"/>
+<area shape="rect" id="node4" href="$mentos_2src_2io_2stdio_8c.html" title="Standard I/0 functions." alt="" coords="358,102,515,129"/>
+<area shape="rect" id="node5" href="$kernel_8c.html" title="Kernel main function." alt="" coords="539,102,689,129"/>
+</map>

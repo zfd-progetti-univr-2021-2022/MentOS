@@ -1,0 +1,7 @@
+<map id="libc/inc/strerror.h" name="libc/inc/strerror.h">
+<area shape="rect" id="node1" title="Contains the function that transfornms an errno into a string." alt="" coords="297,5,427,32"/>
+<area shape="rect" id="node2" href="$vfs_8c.html" title="Headers for Virtual File System (VFS)." alt="" coords="5,87,151,114"/>
+<area shape="rect" id="node3" href="$mentos_2src_2klib_2strerror_8c.html" title=" " alt="" coords="175,87,359,114"/>
+<area shape="rect" id="node4" href="$scheduler_8c.html" title="Scheduler structures and functions." alt="" coords="384,80,532,121"/>
+<area shape="rect" id="node5" href="$libc_2src_2strerror_8c.html" title=" " alt="" coords="557,87,687,114"/>
+</map>

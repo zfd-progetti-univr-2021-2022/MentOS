@@ -1,0 +1,22 @@
+<map id="mentos/src/io/stdio.c" name="mentos/src/io/stdio.c">
+<area shape="rect" id="node1" title="Standard I/0 functions." alt="" coords="588,5,745,32"/>
+<area shape="rect" id="node2" href="$syscall_8h.html" title="System Call handler definition." alt="" coords="148,80,279,107"/>
+<area shape="rect" id="node14" title=" " alt="" coords="303,80,398,107"/>
+<area shape="rect" id="node15" href="$stdio_8h.html" title="Standard I/0 functions." alt="" coords="800,80,867,107"/>
+<area shape="rect" id="node17" href="$video_8h.html" title="Video functions and costants." alt="" coords="621,155,707,181"/>
+<area shape="rect" id="node18" href="$ctype_8h.html" title="Functions related to character handling." alt="" coords="705,80,775,107"/>
+<area shape="rect" id="node19" href="$keyboard_8h.html" title="Definitions about the keyboard." alt="" coords="422,80,629,107"/>
+<area shape="rect" id="node20" href="$string_8h.html" title="String routines." alt="" coords="830,304,901,331"/>
+<area shape="rect" id="node3" href="$syscall__types_8h.html" title="System Call numbers." alt="" coords="126,155,301,181"/>
+<area shape="rect" id="node4" href="$vfs__types_8h.html" title=" " alt="" coords="378,155,491,181"/>
+<area shape="rect" id="node7" href="$dirent_8h.html" title="Functions used to manage directories." alt="" coords="289,229,388,256"/>
+<area shape="rect" id="node12" href="$kernel_8h.html" title="Kernel generic data structure and functions." alt="" coords="516,155,591,181"/>
+<area shape="rect" id="node13" title=" " alt="" coords="5,155,101,181"/>
+<area shape="rect" id="node5" href="$list__head_8h.html" title=" " alt="" coords="377,304,498,331"/>
+<area shape="rect" id="node9" href="$bits_2stat_8h.html" title="Defines the structure used by the functiosn fstat(), lstat(), and stat()." alt="" coords="493,229,579,256"/>
+<area shape="rect" id="node11" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="603,229,674,256"/>
+<area shape="rect" id="node6" href="$stddef_8h.html" title="Define basic data types." alt="" coords="552,379,627,405"/>
+<area shape="rect" id="node8" href="$limits_8h.html" title="OS numeric limits." alt="" coords="230,304,301,331"/>
+<area shape="rect" id="node10" href="$time_8h.html" title="Time&#45;related functions." alt="" coords="523,304,587,331"/>
+<area shape="rect" id="node16" href="$stdarg_8h.html" title="Contains the macros required to manage variable number of arguments." alt="" coords="792,155,867,181"/>
+</map>

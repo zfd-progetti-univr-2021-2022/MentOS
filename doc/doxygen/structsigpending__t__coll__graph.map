@@ -1,0 +1,5 @@
+<map id="sigpending_t" name="sigpending_t">
+<area shape="rect" id="node1" title="Keeps information of pending signals." alt="" coords="112,97,217,124"/>
+<area shape="rect" id="node2" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="5,7,87,33"/>
+<area shape="rect" id="node3" href="$structsigset__t.html" title="Structure used to mask and unmask signals." alt="" coords="168,7,241,33"/>
+</map>

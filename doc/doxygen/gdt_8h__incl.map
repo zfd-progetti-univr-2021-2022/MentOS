@@ -1,0 +1,4 @@
+<map id="mentos/inc/descriptor_tables/gdt.h" name="mentos/inc/descriptor_tables/gdt.h">
+<area shape="rect" id="node1" title="Data structures concerning the Global Descriptor Table (GDT)." alt="" coords="5,5,168,47"/>
+<area shape="rect" id="node2" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="51,95,122,121"/>
+</map>

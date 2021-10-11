@@ -1,0 +1,8 @@
+<map id="mentos/src/descriptor_tables/idt.c" name="mentos/src/descriptor_tables/idt.c">
+<area shape="rect" id="node1" title="Functions which manage the Interrupt Descriptor Table (IDT)." alt="" coords="129,5,291,47"/>
+<area shape="rect" id="node2" href="$idt_8h.html" title="Data structures concerning the Interrupt Descriptor Table (IDT)." alt="" coords="5,169,172,196"/>
+<area shape="rect" id="node4" href="$gdt_8h.html" title="Data structures concerning the Global Descriptor Table (GDT)." alt="" coords="125,95,295,121"/>
+<area shape="rect" id="node5" href="$isr_8h.html" title="Data structures concerning the Interrupt Service Routines (ISRs)." alt="" coords="319,95,485,121"/>
+<area shape="rect" id="node3" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="175,244,245,271"/>
+<area shape="rect" id="node6" href="$kernel_8h.html" title="Kernel generic data structure and functions." alt="" coords="306,169,381,196"/>
+</map>

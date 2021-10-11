@@ -1,0 +1,6 @@
+<map id="sigqueue_t" name="sigqueue_t">
+<area shape="rect" id="node1" title="An entry of the signal queue." alt="" coords="79,187,173,213"/>
+<area shape="rect" id="node2" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="5,96,87,123"/>
+<area shape="rect" id="node3" href="$structsiginfo__t.html" title="Stores information about an occurrence of a specific signal." alt="" coords="168,96,247,123"/>
+<area shape="rect" id="node4" href="$unionsigval.html" title="Data passed with signal info." alt="" coords="177,5,238,32"/>
+</map>

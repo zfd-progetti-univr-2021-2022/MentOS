@@ -1,0 +1,44 @@
+<map id="mentos/inc/mem/paging.h" name="mentos/inc/mem/paging.h">
+<area shape="rect" id="node1" title="Implementation of a memory paging management." alt="" coords="4619,5,4811,32"/>
+<area shape="rect" id="node2" href="$vmem__map_8h.html" title="Virtual memory mapping routines." alt="" coords="426,169,605,211"/>
+<area shape="rect" id="node5" href="$paging_8c.html" title="Implementation of a memory paging management." alt="" coords="309,355,500,382"/>
+<area shape="rect" id="node7" href="$process_8h.html" title="Process data structures and functions." alt="" coords="1655,80,1803,121"/>
+<area shape="rect" id="node9" href="$boot_8c.html" title="Bootloader." alt="" coords="229,266,367,293"/>
+<area shape="rect" id="node20" href="$scheduler_8c.html" title="Scheduler structures and functions." alt="" coords="3919,348,4067,389"/>
+<area shape="rect" id="node28" href="$kheap_8c.html" title=" " alt="" coords="4647,355,4834,382"/>
+<area shape="rect" id="node39" href="$mentos_2src_2klib_2libgen_8c.html" title="String routines." alt="" coords="4779,87,4956,114"/>
+<area shape="rect" id="node40" href="$buddysystem_8c.html" title="Buddy System." alt="" coords="4981,87,5215,114"/>
+<area shape="rect" id="node41" href="$slab_8c_source.html" title=" " alt="" coords="5240,87,5415,114"/>
+<area shape="rect" id="node42" href="$zone__allocator_8c.html" title="Implementation of the Zone Allocator." alt="" coords="5439,80,5605,121"/>
+<area shape="rect" id="node3" href="$elf_8c.html" title="Function for multiboot support." alt="" coords="442,266,589,293"/>
+<area shape="rect" id="node4" href="$kernel_8c.html" title="Kernel main function." alt="" coords="1305,266,1454,293"/>
+<area shape="rect" id="node6" href="$vmem__map_8c.html" title="Virtual memory mapping routines." alt="" coords="26,259,205,300"/>
+<area shape="rect" id="node8" href="$elf_8h.html" title="Function for multiboot support." alt="" coords="657,177,803,203"/>
+<area shape="rect" id="node10" href="$process_8c.html" title="Process data structures and functions." alt="" coords="1479,259,1627,300"/>
+<area shape="rect" id="node11" href="$procfs_8h.html" title="Proc file system public functions and structures." alt="" coords="1125,177,1292,203"/>
+<area shape="rect" id="node14" href="$proc__running_8c_source.html" title=" " alt="" coords="613,259,756,300"/>
+<area shape="rect" id="node15" href="$proc__system_8c.html" title="Contains callbacks for procfs system files." alt="" coords="1137,259,1280,300"/>
+<area shape="rect" id="node17" href="$timer_8h.html" title="Programmable Interval Timer (PIT) definitions." alt="" coords="1649,169,1808,211"/>
+<area shape="rect" id="node22" href="$syscall_8c.html" title="System Call management functions." alt="" coords="2395,355,2601,382"/>
+<area shape="rect" id="node23" href="$scheduler_8h.html" title="Scheduler structures and functions." alt="" coords="2815,169,2963,211"/>
+<area shape="rect" id="node30" href="$fpu_8c.html" title="Floating Point Unit (FPU)." alt="" coords="2412,259,2560,300"/>
+<area shape="rect" id="node34" href="$mentos_2src_2fs_2open_8c.html" title=" " alt="" coords="2585,266,2742,293"/>
+<area shape="rect" id="node38" href="$mentos_2src_2system_2signal_8c.html" title="Signals definition." alt="" coords="4453,266,4653,293"/>
+<area shape="rect" id="node12" href="$procfs_8c.html" title="Proc file system implementation." alt="" coords="781,266,946,293"/>
+<area shape="rect" id="node13" href="$vfs_8c.html" title="Headers for Virtual File System (VFS)." alt="" coords="1945,266,2091,293"/>
+<area shape="rect" id="node16" href="$proc__video_8c_source.html" title=" " alt="" coords="971,259,1113,300"/>
+<area shape="rect" id="node18" href="$timer_8c.html" title="Timer implementation." alt="" coords="2751,348,2909,389"/>
+<area shape="rect" id="node19" href="$mentos_2src_2klib_2time_8c.html" title="Clock functions." alt="" coords="1703,266,1869,293"/>
+<area shape="rect" id="node21" href="$scheduler__algorithm_8c.html" title="Round Robin algorithm." alt="" coords="2166,259,2337,300"/>
+<area shape="rect" id="node24" href="$kheap_8h.html" title="Interface for kernel heap functions, also provides a placement malloc() for use before the heap is in..." alt="" coords="4240,266,4428,293"/>
+<area shape="rect" id="node29" href="$interrupt_8c.html" title="Functions which manage the Interrupt Service Routines (ISRs)." alt="" coords="4002,259,4165,300"/>
+<area shape="rect" id="node31" href="$keyboard_8c.html" title="Keyboard handling." alt="" coords="2868,259,3029,300"/>
+<area shape="rect" id="node32" href="$mentos_2src_2fs_2ioctl_8c.html" title=" " alt="" coords="3053,266,3207,293"/>
+<area shape="rect" id="node33" href="$namei_8c.html" title="Implementation of functions fcntl() and open()." alt="" coords="3231,266,3397,293"/>
+<area shape="rect" id="node35" href="$read__write_8c.html" title="Read and write functions." alt="" coords="3421,259,3564,300"/>
+<area shape="rect" id="node36" href="$readdir_8c.html" title="Function for accessing directory entries." alt="" coords="3589,266,3759,293"/>
+<area shape="rect" id="node37" href="$mentos_2src_2system_2errno_8c.html" title=" " alt="" coords="3783,266,3978,293"/>
+<area shape="rect" id="node25" href="$initrd_8c.html" title="Headers of functions for initrd filesystem." alt="" coords="4289,355,4448,382"/>
+<area shape="rect" id="node26" href="$mentos_2src_2fs_2stat_8c.html" title="Stat functions." alt="" coords="4472,355,4623,382"/>
+<area shape="rect" id="node27" href="$mentos_2src_2klib_2string_8c.html" title="String routines." alt="" coords="4091,355,4265,382"/>
+</map>

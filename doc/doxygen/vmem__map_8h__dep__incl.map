@@ -1,0 +1,7 @@
+<map id="mentos/inc/mem/vmem_map.h" name="mentos/inc/mem/vmem_map.h">
+<area shape="rect" id="node1" title="Virtual memory mapping routines." alt="" coords="259,5,437,47"/>
+<area shape="rect" id="node2" href="$elf_8c.html" title="Function for multiboot support." alt="" coords="5,102,152,129"/>
+<area shape="rect" id="node3" href="$kernel_8c.html" title="Kernel main function." alt="" coords="176,102,325,129"/>
+<area shape="rect" id="node4" href="$paging_8c.html" title="Implementation of a memory paging management." alt="" coords="350,102,541,129"/>
+<area shape="rect" id="node5" href="$vmem__map_8c.html" title="Virtual memory mapping routines." alt="" coords="565,95,744,136"/>
+</map>

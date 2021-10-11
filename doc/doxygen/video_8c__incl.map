@@ -1,0 +1,12 @@
+<map id="mentos/src/io/video.c" name="mentos/src/io/video.c">
+<area shape="rect" id="node1" title="Video functions and costants." alt="" coords="247,5,408,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,100,107"/>
+<area shape="rect" id="node3" href="$video_8h.html" title="Video functions and costants." alt="" coords="124,80,211,107"/>
+<area shape="rect" id="node5" href="$stdbool_8h.html" title="Defines the boolean values." alt="" coords="235,80,318,107"/>
+<area shape="rect" id="node6" href="$ctype_8h.html" title="Functions related to character handling." alt="" coords="343,80,413,107"/>
+<area shape="rect" id="node7" href="$string_8h.html" title="String routines." alt="" coords="437,80,508,107"/>
+<area shape="rect" id="node9" href="$stdio_8h.html" title="Standard I/0 functions." alt="" coords="533,80,599,107"/>
+<area shape="rect" id="node4" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="132,155,203,181"/>
+<area shape="rect" id="node8" href="$stddef_8h.html" title="Define basic data types." alt="" coords="435,155,510,181"/>
+<area shape="rect" id="node10" href="$stdarg_8h.html" title="Contains the macros required to manage variable number of arguments." alt="" coords="534,155,609,181"/>
+</map>

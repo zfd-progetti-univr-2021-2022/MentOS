@@ -1,0 +1,13 @@
+<map id="mentos/src/descriptor_tables/exception.c" name="mentos/src/descriptor_tables/exception.c">
+<area shape="rect" id="node1" title="Functions which manage the Interrupt Service Routines (ISRs)." alt="" coords="273,5,435,47"/>
+<area shape="rect" id="node2" href="$panic_8h.html" title="Functions used to manage kernel panic." alt="" coords="5,95,127,121"/>
+<area shape="rect" id="node3" href="$isr_8h.html" title="Data structures concerning the Interrupt Service Routines (ISRs)." alt="" coords="151,95,317,121"/>
+<area shape="rect" id="node6" href="$idt_8h.html" title="Data structures concerning the Interrupt Descriptor Table (IDT)." alt="" coords="233,169,400,196"/>
+<area shape="rect" id="node7" href="$stdio_8h.html" title="Standard I/0 functions." alt="" coords="429,95,495,121"/>
+<area shape="rect" id="node10" href="$mentos_2inc_2misc_2debug_8h.html" title="Debugging primitives." alt="" coords="581,95,690,121"/>
+<area shape="rect" id="node4" href="$kernel_8h.html" title="Kernel generic data structure and functions." alt="" coords="134,169,209,196"/>
+<area shape="rect" id="node5" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="208,244,279,271"/>
+<area shape="rect" id="node8" href="$stdarg_8h.html" title="Contains the macros required to manage variable number of arguments." alt="" coords="425,169,499,196"/>
+<area shape="rect" id="node9" href="$stddef_8h.html" title="Define basic data types." alt="" coords="523,169,598,196"/>
+<area shape="rect" id="node11" href="$kernel__levels_8h.html" title=" " alt="" coords="622,169,769,196"/>
+</map>

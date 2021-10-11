@@ -1,0 +1,7 @@
+<map id="libc/src/strerror.c" name="libc/src/strerror.c">
+<area shape="rect" id="node1" title=" " alt="" coords="41,5,171,32"/>
+<area shape="rect" id="node2" href="$strerror_8h.html" title="Contains the function that transfornms an errno into a string." alt="" coords="16,80,97,107"/>
+<area shape="rect" id="node4" href="$string_8h.html" title="String routines." alt="" coords="124,80,195,107"/>
+<area shape="rect" id="node3" href="$libc_2inc_2sys_2errno_8h.html" title="System call errors definition." alt="" coords="5,155,100,181"/>
+<area shape="rect" id="node5" href="$stddef_8h.html" title="Define basic data types." alt="" coords="125,155,199,181"/>
+</map>

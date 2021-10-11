@@ -1,0 +1,6 @@
+<map id="mentos/inc/klib/irqflags.h" name="mentos/inc/klib/irqflags.h">
+<area shape="rect" id="node1" title=" " alt="" coords="170,5,357,32"/>
+<area shape="rect" id="node2" href="$timer_8c.html" title="Timer implementation." alt="" coords="5,80,164,121"/>
+<area shape="rect" id="node3" href="$kernel_8c.html" title="Kernel main function." alt="" coords="189,87,338,114"/>
+<area shape="rect" id="node4" href="$mentos_2src_2system_2signal_8c.html" title="Signals definition." alt="" coords="362,87,562,114"/>
+</map>

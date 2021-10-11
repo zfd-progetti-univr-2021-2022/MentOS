@@ -1,0 +1,10 @@
+<map id="mentos/inc/fs/vfs_types.h" name="mentos/inc/fs/vfs_types.h">
+<area shape="rect" id="node1" title=" " alt="" coords="158,5,347,32"/>
+<area shape="rect" id="node2" href="$list__head_8h.html" title=" " alt="" coords="5,155,127,181"/>
+<area shape="rect" id="node4" href="$dirent_8h.html" title="Functions used to manage directories." alt="" coords="145,80,243,107"/>
+<area shape="rect" id="node6" href="$bits_2stat_8h.html" title="Defines the structure used by the functiosn fstat(), lstat(), and stat()." alt="" coords="268,80,355,107"/>
+<area shape="rect" id="node8" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="379,80,449,107"/>
+<area shape="rect" id="node3" href="$stddef_8h.html" title="Define basic data types." alt="" coords="201,229,275,256"/>
+<area shape="rect" id="node5" href="$limits_8h.html" title="OS numeric limits." alt="" coords="203,155,273,181"/>
+<area shape="rect" id="node7" href="$time_8h.html" title="Time&#45;related functions." alt="" coords="349,155,413,181"/>
+</map>

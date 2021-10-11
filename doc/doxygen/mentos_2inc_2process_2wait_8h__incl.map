@@ -1,0 +1,10 @@
+<map id="mentos/inc/process/wait.h" name="mentos/inc/process/wait.h">
+<area shape="rect" id="node1" title=" " alt="" coords="63,5,211,47"/>
+<area shape="rect" id="node2" href="$list__head_8h.html" title=" " alt="" coords="5,95,127,121"/>
+<area shape="rect" id="node4" href="$spinlock_8h.html" title=" " alt="" coords="151,95,267,121"/>
+<area shape="rect" id="node3" href="$stddef_8h.html" title="Define basic data types." alt="" coords="29,169,103,196"/>
+<area shape="rect" id="node5" href="$stdatomic_8h.html" title=" " alt="" coords="145,169,272,196"/>
+<area shape="rect" id="node6" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="72,244,143,271"/>
+<area shape="rect" id="node7" href="$stdbool_8h.html" title="Defines the boolean values." alt="" coords="167,244,250,271"/>
+<area shape="rect" id="node8" href="$compiler_8h.html" title=" " alt="" coords="275,244,393,271"/>
+</map>

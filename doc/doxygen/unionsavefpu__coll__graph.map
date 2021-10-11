@@ -1,0 +1,9 @@
+<map id="savefpu" name="savefpu">
+<area shape="rect" id="node1" title="Stores FPU registers details." alt="" coords="131,184,206,211"/>
+<area shape="rect" id="node2" href="$structsavexmm.html" title="Stores the XMM context." alt="" coords="200,95,287,121"/>
+<area shape="rect" id="node3" href="$structfpacc87.html" title="Contents of each floating point accumulator." alt="" coords="111,5,184,32"/>
+<area shape="rect" id="node6" href="$structsave87.html" title="Floating point context." alt="" coords="83,95,153,121"/>
+<area shape="rect" id="node4" href="$structxmmacc.html" title="Contents of each SSE extended accumulator." alt="" coords="332,5,411,32"/>
+<area shape="rect" id="node5" href="$structenvxmm.html" title="Stores the XMM environment." alt="" coords="227,5,307,32"/>
+<area shape="rect" id="node7" href="$structenv87.html" title="Environment information of floating point unit." alt="" coords="5,5,68,32"/>
+</map>

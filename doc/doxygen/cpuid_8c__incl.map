@@ -1,0 +1,8 @@
+<map id="mentos/src/hardware/cpuid.c" name="mentos/src/hardware/cpuid.c">
+<area shape="rect" id="node1" title="CPUID&#45;based function to detect CPU type." alt="" coords="56,5,215,47"/>
+<area shape="rect" id="node2" href="$cpuid_8h.html" title="CPUID definitions." alt="" coords="5,95,140,121"/>
+<area shape="rect" id="node5" href="$string_8h.html" title="String routines." alt="" coords="164,95,235,121"/>
+<area shape="rect" id="node3" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="15,244,85,271"/>
+<area shape="rect" id="node4" href="$kernel_8h.html" title="Kernel generic data structure and functions." alt="" coords="50,169,125,196"/>
+<area shape="rect" id="node6" href="$stddef_8h.html" title="Define basic data types." alt="" coords="162,169,237,196"/>
+</map>

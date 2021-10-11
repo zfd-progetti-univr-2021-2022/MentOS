@@ -1,0 +1,12 @@
+<map id="libc/src/vscanf.c" name="libc/src/vscanf.c">
+<area shape="rect" id="node1" title="Reading formatting routines." alt="" coords="89,5,214,32"/>
+<area shape="rect" id="node2" href="$string_8h.html" title="String routines." alt="" coords="5,155,76,181"/>
+<area shape="rect" id="node4" href="$ctype_8h.html" title="Functions related to character handling." alt="" coords="69,80,140,107"/>
+<area shape="rect" id="node5" href="$stdio_8h.html" title="Standard I/0 functions." alt="" coords="165,80,231,107"/>
+<area shape="rect" id="node7" href="$unistd_8h.html" title="Functions used to manage files." alt="" coords="277,80,377,107"/>
+<area shape="rect" id="node3" href="$stddef_8h.html" title="Define basic data types." alt="" coords="155,229,230,256"/>
+<area shape="rect" id="node6" href="$stdarg_8h.html" title="Contains the macros required to manage variable number of arguments." alt="" coords="155,155,230,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="305,155,401,181"/>
+<area shape="rect" id="node9" href="$dirent_8h.html" title="Functions used to manage directories." alt="" coords="425,155,523,181"/>
+<area shape="rect" id="node10" href="$limits_8h.html" title="OS numeric limits." alt="" coords="439,229,509,256"/>
+</map>

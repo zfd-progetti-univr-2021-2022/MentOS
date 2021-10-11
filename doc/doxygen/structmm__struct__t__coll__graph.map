@@ -1,0 +1,7 @@
+<map id="mm_struct_t" name="mm_struct_t">
+<area shape="rect" id="node1" title="Memory Descriptor, used to store details about the memory of a user process." alt="" coords="142,201,246,228"/>
+<area shape="rect" id="node5" href="$structvm__area__struct__t.html" title="Virtual Memory Area, used to store details of a process segment." alt="" coords="23,291,157,317"/>
+<area shape="rect" id="node2" href="$structpage__directory__t.html" title="A page directory." alt="" coords="169,96,299,123"/>
+<area shape="rect" id="node3" href="$structpage__dir__entry__t.html" title="An entry of a page directory." alt="" coords="169,5,299,32"/>
+<area shape="rect" id="node4" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="5,96,87,123"/>
+</map>

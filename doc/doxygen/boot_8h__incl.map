@@ -1,0 +1,5 @@
+<map id="mentos/inc/boot.h" name="mentos/inc/boot.h">
+<area shape="rect" id="node1" title="Bootloader structures." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$multiboot_8h.html" title="Data structures used for multiboot." alt="" coords="26,80,123,107"/>
+<area shape="rect" id="node3" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="39,155,110,181"/>
+</map>

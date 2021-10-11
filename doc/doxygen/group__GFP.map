@@ -1,0 +1,8 @@
+<map id="The Get Free Pages (GFP) flags" name="The Get Free Pages (GFP) flags">
+<area shape="rect" id="node1" href="$group__WatermarkModifiers.html" title="Controls access to emergency reserves." alt="" coords="200,5,359,31"/>
+<area shape="rect" id="node2" title="Sets of GFP defines." alt="" coords="5,97,152,137"/>
+<area shape="rect" id="node3" href="$group__ReclaimModifiers.html" title="Enable reclaim operations on a specific region of memory." alt="" coords="210,55,349,80"/>
+<area shape="rect" id="node4" href="$group__zone__modifiers.html" title="Physical address zone modifiers (see linux/mmzone.h &#45; low four bits)" alt="" coords="220,104,339,129"/>
+<area shape="rect" id="node5" href="$group__gfp__flag__combinations.html" title="Useful GFP flag combinations." alt="" coords="207,153,351,179"/>
+<area shape="rect" id="node6" href="$group__gfp__bitmasks.html" title="Plain integer GFP bitmasks. Do not use this directly." alt="" coords="238,203,321,228"/>
+</map>

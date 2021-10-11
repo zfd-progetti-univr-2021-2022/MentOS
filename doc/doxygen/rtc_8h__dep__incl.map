@@ -1,0 +1,7 @@
+<map id="mentos/inc/drivers/rtc.h" name="mentos/inc/drivers/rtc.h">
+<area shape="rect" id="node1" title="Real Time Clock (RTC) driver." alt="" coords="269,5,412,47"/>
+<area shape="rect" id="node2" href="$rtc_8c.html" title="Real Time Clock (RTC) driver." alt="" coords="5,95,148,136"/>
+<area shape="rect" id="node3" href="$timer_8c.html" title="Timer implementation." alt="" coords="172,95,331,136"/>
+<area shape="rect" id="node4" href="$kernel_8c.html" title="Kernel main function." alt="" coords="355,102,505,129"/>
+<area shape="rect" id="node5" href="$mentos_2src_2klib_2time_8c.html" title="Clock functions." alt="" coords="529,102,696,129"/>
+</map>

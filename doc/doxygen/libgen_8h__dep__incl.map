@@ -1,0 +1,10 @@
+<map id="libc/inc/libgen.h" name="libc/inc/libgen.h">
+<area shape="rect" id="node1" title="String routines." alt="" coords="557,5,681,32"/>
+<area shape="rect" id="node2" href="$initrd_8c.html" title="Headers of functions for initrd filesystem." alt="" coords="5,87,164,114"/>
+<area shape="rect" id="node3" href="$procfs_8c.html" title="Proc file system implementation." alt="" coords="189,87,354,114"/>
+<area shape="rect" id="node4" href="$vfs_8c.html" title="Headers for Virtual File System (VFS)." alt="" coords="379,87,524,114"/>
+<area shape="rect" id="node5" href="$proc__running_8c_source.html" title=" " alt="" coords="548,80,691,121"/>
+<area shape="rect" id="node6" href="$mentos_2src_2klib_2libgen_8c.html" title="String routines." alt="" coords="715,87,892,114"/>
+<area shape="rect" id="node7" href="$process_8c.html" title="Process data structures and functions." alt="" coords="916,80,1064,121"/>
+<area shape="rect" id="node8" href="$libc_2src_2libgen_8c.html" title="String routines." alt="" coords="1089,87,1211,114"/>
+</map>

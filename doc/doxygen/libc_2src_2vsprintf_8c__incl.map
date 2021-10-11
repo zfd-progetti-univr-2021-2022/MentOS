@@ -1,0 +1,15 @@
+<map id="libc/src/vsprintf.c" name="libc/src/vsprintf.c">
+<area shape="rect" id="node1" title="Print formatting routines." alt="" coords="280,5,412,32"/>
+<area shape="rect" id="node2" href="$bitops_8h.html" title="Bitmasks functions." alt="" coords="5,80,105,107"/>
+<area shape="rect" id="node3" href="$fcvt_8h.html" title="Declare the functions required to turn double values into a string." alt="" coords="129,80,187,107"/>
+<area shape="rect" id="node4" href="$ctype_8h.html" title="Functions related to character handling." alt="" coords="212,80,283,107"/>
+<area shape="rect" id="node5" href="$string_8h.html" title="String routines." alt="" coords="291,155,361,181"/>
+<area shape="rect" id="node7" href="$stdarg_8h.html" title="Contains the macros required to manage variable number of arguments." alt="" coords="394,155,469,181"/>
+<area shape="rect" id="node8" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="409,80,480,107"/>
+<area shape="rect" id="node9" href="$stdio_8h.html" title="Standard I/0 functions." alt="" coords="505,80,571,107"/>
+<area shape="rect" id="node10" href="$unistd_8h.html" title="Functions used to manage files." alt="" coords="596,80,696,107"/>
+<area shape="rect" id="node6" href="$stddef_8h.html" title="Define basic data types." alt="" coords="498,229,573,256"/>
+<area shape="rect" id="node11" title=" " alt="" coords="598,155,694,181"/>
+<area shape="rect" id="node12" href="$dirent_8h.html" title="Functions used to manage directories." alt="" coords="718,155,817,181"/>
+<area shape="rect" id="node13" href="$limits_8h.html" title="OS numeric limits." alt="" coords="732,229,803,256"/>
+</map>

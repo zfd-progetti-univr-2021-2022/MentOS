@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['object_5fsize_3905',['object_size',['../structkmem__cache__t.html#a0dcaaadc4a1f5ffac66fd901be6daaf1',1,'kmem_cache_t']]],
+  ['objlist_3906',['objlist',['../structkmem__obj.html#a63f3169f4bdf1dd906e3a302af22ea40',1,'kmem_obj']]],
+  ['offset_3907',['offset',['../structelf__program__header.html#aa18efe18b7e4751f92d13c20acbde2bf',1,'elf_program_header::offset()'],['../structelf__section__header.html#a1d7b46a9f60b9cb24839f13d1d11f2f2',1,'elf_section_header::offset()'],['../structvga__mode__t.html#a795ba4e9037240f8d107f06e823bc748',1,'vga_mode_t::offset()'],['../structinitrd__file__t.html#ad84e0e02cd3a78e2f93e0dcf2da421e1',1,'initrd_file_t::offset()']]],
+  ['offset_5fhigh_3908',['offset_high',['../structidt__descriptor__t.html#af45536d68f0f70e269a69b00a400e1ec',1,'idt_descriptor_t']]],
+  ['offset_5flow_3909',['offset_low',['../structidt__descriptor__t.html#a3205f89e5b516185531b69197ea3fc39',1,'idt_descriptor_t']]],
+  ['open_5ff_3910',['open_f',['../structvfs__file__operations__t.html#ad742975925c1fab8203f3855909ede7f',1,'vfs_file_operations_t']]],
+  ['open_5fflags_3911',['open_flags',['../structvfs__file__t.html#a02d9835353d7ec24a977cf2f664bdbda',1,'vfs_file_t']]],
+  ['ops_3912',['ops',['../structvga__driver__t.html#ad1180569619c9b1fb3e2e625e1227829',1,'vga_driver_t']]],
+  ['options_3913',['options',['../structidt__descriptor__t.html#a98737fcbc8013b67e592fc18b90161eb',1,'idt_descriptor_t']]],
+  ['order_3914',['order',['../structbb__page__t.html#adacd71714d4ce614cf55cc2ffe8f05a3',1,'bb_page_t']]],
+  ['original_5fpage_3915',['original_page',['../video_8c.html#a594253950924bd401c18d878db4bbb31',1,'video.c']]],
+  ['orphans_3916',['orphans',['../structndtree__t.html#a606da1f3f205c25412c950c8166db86b',1,'ndtree_t']]],
+  ['other_3917',['other',['../structelf__symbol.html#aabb5b1dd5a4eb58682fb5740aa9b47b0',1,'elf_symbol']]],
+  ['overflow_3918',['overflow',['../structvga__mode__t.html#ae285559318e72633f9fedce45a94e522',1,'vga_mode_t']]],
+  ['overscan_5fcolor_3919',['overscan_color',['../structvga__mode__t.html#aaf87480c64d862271e9d42f449b42541',1,'vga_mode_t']]],
+  ['owner_3920',['owner',['../structmutex__t.html#ad47e3062cd7686b53f2b53d481a694e2',1,'mutex_t']]]
+];

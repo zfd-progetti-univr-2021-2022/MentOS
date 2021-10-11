@@ -1,0 +1,9 @@
+<map id="mentos/inc/mem/buddysystem.h" name="mentos/inc/mem/buddysystem.h">
+<area shape="rect" id="node1" title="Buddy System." alt="" coords="47,5,283,32"/>
+<area shape="rect" id="node2" href="$list__head_8h.html" title=" " alt="" coords="5,80,127,107"/>
+<area shape="rect" id="node4" href="$stdatomic_8h.html" title=" " alt="" coords="203,80,329,107"/>
+<area shape="rect" id="node5" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="129,155,200,181"/>
+<area shape="rect" id="node3" href="$stddef_8h.html" title="Define basic data types." alt="" coords="29,155,103,181"/>
+<area shape="rect" id="node6" href="$stdbool_8h.html" title="Defines the boolean values." alt="" coords="225,155,307,181"/>
+<area shape="rect" id="node7" href="$compiler_8h.html" title=" " alt="" coords="332,155,451,181"/>
+</map>

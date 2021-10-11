@@ -1,0 +1,6 @@
+<map id="page_iterator_s" name="page_iterator_s">
+<area shape="rect" id="node1" title="Structure for iterating page directory entries." alt="" coords="124,184,247,211"/>
+<area shape="rect" id="node2" href="$structpage__table__t.html" title="A page table." alt="" coords="25,95,132,121"/>
+<area shape="rect" id="node3" href="$structpage__table__entry__t.html" title="An entry of a page table." alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node4" href="$structpage__dir__entry__t.html" title="An entry of a page directory." alt="" coords="156,95,287,121"/>
+</map>

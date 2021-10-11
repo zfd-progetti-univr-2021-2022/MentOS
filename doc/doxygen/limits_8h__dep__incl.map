@@ -1,0 +1,52 @@
+<map id="libc/inc/limits.h" name="libc/inc/limits.h">
+<area shape="rect" id="node1" title="OS numeric limits." alt="" coords="5798,5,5919,32"/>
+<area shape="rect" id="node2" href="$mentos_2src_2fs_2open_8c.html" title=" " alt="" coords="5148,311,5305,338"/>
+<area shape="rect" id="node3" href="$mentos_2src_2fs_2stat_8c.html" title="Stat functions." alt="" coords="6875,311,7026,338"/>
+<area shape="rect" id="node4" href="$mentos_2src_2klib_2libgen_8c.html" title="String routines." alt="" coords="6507,311,6684,338"/>
+<area shape="rect" id="node5" href="$dirent_8h.html" title="Functions used to manage directories." alt="" coords="5840,80,5988,107"/>
+<area shape="rect" id="node22" href="$libc_2src_2libgen_8c.html" title="String routines." alt="" coords="24,229,146,256"/>
+<area shape="rect" id="node25" href="$unistd_8c.html" title="Functions used to manage files." alt="" coords="5728,229,5877,256"/>
+<area shape="rect" id="node6" href="$vfs__types_8h.html" title=" " alt="" coords="6105,155,6294,181"/>
+<area shape="rect" id="node10" href="$readdir_8c.html" title="Function for accessing directory entries." alt="" coords="5329,311,5500,338"/>
+<area shape="rect" id="node13" href="$syscall_8h.html" title="System Call handler definition." alt="" coords="5952,229,6159,256"/>
+<area shape="rect" id="node17" href="$unistd_8h.html" title="Functions used to manage files." alt="" coords="2816,155,2967,181"/>
+<area shape="rect" id="node7" href="$vfs_8h.html" title="Headers for Virtual File System (VFS)." alt="" coords="6184,229,6330,256"/>
+<area shape="rect" id="node9" href="$read__write_8c.html" title="Read and write functions." alt="" coords="6708,304,6851,345"/>
+<area shape="rect" id="node8" href="$initrd_8c.html" title="Headers of functions for initrd filesystem." alt="" coords="6155,311,6314,338"/>
+<area shape="rect" id="node11" href="$vfs_8c.html" title="Headers for Virtual File System (VFS)." alt="" coords="6338,311,6483,338"/>
+<area shape="rect" id="node12" href="$kernel_8c.html" title="Kernel main function." alt="" coords="5981,311,6130,338"/>
+<area shape="rect" id="node14" href="$mentos_2inc_2system_2signal_8h.html" title="Signals definition." alt="" coords="5755,311,5956,338"/>
+<area shape="rect" id="node15" href="$mentos_2src_2io_2stdio_8c.html" title="Standard I/0 functions." alt="" coords="4966,311,5124,338"/>
+<area shape="rect" id="node16" href="$syscall_8c.html" title="System Call management functions." alt="" coords="5524,311,5731,338"/>
+<area shape="rect" id="node18" href="$abort_8c.html" title=" " alt="" coords="2032,229,2149,256"/>
+<area shape="rect" id="node19" href="$grp_8c.html" title=" " alt="" coords="2173,229,2277,256"/>
+<area shape="rect" id="node20" href="$ipc_8c.html" title="Inter&#45;Process Communication (IPC) system call implementation." alt="" coords="2301,229,2426,256"/>
+<area shape="rect" id="node21" href="$libc__start_8c.html" title="Contains the programs initialization procedure." alt="" coords="2451,229,2594,256"/>
+<area shape="rect" id="node23" href="$pwd_8c.html" title=" " alt="" coords="2618,229,2728,256"/>
+<area shape="rect" id="node24" href="$libc_2src_2stdio_8c.html" title="Standard I/0 functions." alt="" coords="2753,229,2868,256"/>
+<area shape="rect" id="node26" href="$chdir_8c.html" title=" " alt="" coords="2892,229,3051,256"/>
+<area shape="rect" id="node27" href="$close_8c.html" title=" " alt="" coords="3075,229,3236,256"/>
+<area shape="rect" id="node28" href="$exec_8c.html" title=" " alt="" coords="3261,229,3418,256"/>
+<area shape="rect" id="node29" href="$exit_8c.html" title=" " alt="" coords="3442,229,3594,256"/>
+<area shape="rect" id="node30" href="$fork_8c.html" title=" " alt="" coords="3619,229,3772,256"/>
+<area shape="rect" id="node31" href="$getcwd_8c.html" title=" " alt="" coords="3796,229,3971,256"/>
+<area shape="rect" id="node32" href="$getdents_8c.html" title=" " alt="" coords="3996,229,4180,256"/>
+<area shape="rect" id="node33" href="$getgid_8c.html" title=" " alt="" coords="4204,229,4372,256"/>
+<area shape="rect" id="node34" href="$getpid_8c.html" title=" " alt="" coords="4396,229,4564,256"/>
+<area shape="rect" id="node35" href="$getppid_8c.html" title=" " alt="" coords="4588,229,4764,256"/>
+<area shape="rect" id="node36" href="$getsid_8c.html" title=" " alt="" coords="4788,229,4955,256"/>
+<area shape="rect" id="node37" href="$interval_8c_source.html" title=" " alt="" coords="4979,229,5156,256"/>
+<area shape="rect" id="node38" href="$kill_8c.html" title=" " alt="" coords="5181,229,5328,256"/>
+<area shape="rect" id="node39" href="$lseek_8c_source.html" title=" " alt="" coords="5352,229,5514,256"/>
+<area shape="rect" id="node40" href="$mkdir_8c.html" title="Make directory functions." alt="" coords="5539,229,5703,256"/>
+<area shape="rect" id="node41" href="$nice_8c.html" title=" " alt="" coords="170,229,325,256"/>
+<area shape="rect" id="node42" href="$libc_2src_2unistd_2open_8c.html" title=" " alt="" coords="350,229,508,256"/>
+<area shape="rect" id="node43" href="$read_8c.html" title=" " alt="" coords="532,229,688,256"/>
+<area shape="rect" id="node44" href="$reboot_8c.html" title=" " alt="" coords="712,229,882,256"/>
+<area shape="rect" id="node45" href="$rmdir_8c.html" title="Make directory functions." alt="" coords="906,229,1067,256"/>
+<area shape="rect" id="node46" href="$setgid_8c.html" title=" " alt="" coords="1091,229,1258,256"/>
+<area shape="rect" id="node47" href="$setsid_8c.html" title=" " alt="" coords="1282,229,1448,256"/>
+<area shape="rect" id="node48" href="$libc_2src_2unistd_2signal_8c.html" title=" " alt="" coords="1472,229,1639,256"/>
+<area shape="rect" id="node49" href="$libc_2src_2unistd_2stat_8c.html" title="Stat functions." alt="" coords="1664,229,1816,256"/>
+<area shape="rect" id="node50" href="$unlink_8c.html" title=" " alt="" coords="1840,229,2007,256"/>
+</map>

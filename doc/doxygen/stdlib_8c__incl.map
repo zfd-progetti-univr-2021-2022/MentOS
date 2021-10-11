@@ -1,0 +1,8 @@
+<map id="libc/src/stdlib.c" name="libc/src/stdlib.c">
+<area shape="rect" id="node1" title=" " alt="" coords="227,5,345,32"/>
+<area shape="rect" id="node2" href="$syscall__types_8h.html" title="System Call numbers." alt="" coords="5,80,180,107"/>
+<area shape="rect" id="node3" href="$stdlib_8h.html" title="Useful generic functions and macros." alt="" coords="204,80,275,107"/>
+<area shape="rect" id="node5" href="$string_8h.html" title="String routines." alt="" coords="299,80,369,107"/>
+<area shape="rect" id="node6" href="$assert_8h.html" title="Defines the function and pre&#45;processor macro for assertions." alt="" coords="394,80,469,107"/>
+<area shape="rect" id="node4" href="$stddef_8h.html" title="Define basic data types." alt="" coords="249,155,323,181"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ndtree_t" name="ndtree_t">
+<area shape="rect" id="node1" title="Stores data about an NDTree." alt="" coords="8,201,84,228"/>
+<area shape="rect" id="node2" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="5,7,87,33"/>
+<area shape="rect" id="node3" href="$structndtree__node__t.html" title="Stores data about an NDTree node." alt="" coords="106,112,221,139"/>
+</map>

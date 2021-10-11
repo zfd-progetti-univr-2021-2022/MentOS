@@ -1,0 +1,12 @@
+<map id="mentos/inc/descriptor_tables/isr.h" name="mentos/inc/descriptor_tables/isr.h">
+<area shape="rect" id="node1" title="Data structures concerning the Interrupt Service Routines (ISRs)." alt="" coords="737,5,900,47"/>
+<area shape="rect" id="node2" href="$exception_8c.html" title="Functions which manage the Interrupt Service Routines (ISRs)." alt="" coords="5,95,168,136"/>
+<area shape="rect" id="node3" href="$idt_8c.html" title="Functions which manage the Interrupt Descriptor Table (IDT)." alt="" coords="192,95,355,136"/>
+<area shape="rect" id="node4" href="$interrupt_8c.html" title="Functions which manage the Interrupt Service Routines (ISRs)." alt="" coords="379,95,541,136"/>
+<area shape="rect" id="node5" href="$fpu_8c.html" title="Floating Point Unit (FPU)." alt="" coords="566,95,714,136"/>
+<area shape="rect" id="node6" href="$keyboard_8c.html" title="Keyboard handling." alt="" coords="738,95,899,136"/>
+<area shape="rect" id="node7" href="$rtc_8c.html" title="Real Time Clock (RTC) driver." alt="" coords="923,95,1066,136"/>
+<area shape="rect" id="node8" href="$timer_8c.html" title="Timer implementation." alt="" coords="1090,95,1249,136"/>
+<area shape="rect" id="node9" href="$paging_8c.html" title="Implementation of a memory paging management." alt="" coords="1273,102,1463,129"/>
+<area shape="rect" id="node10" href="$syscall_8c.html" title="System Call management functions." alt="" coords="1487,102,1694,129"/>
+</map>

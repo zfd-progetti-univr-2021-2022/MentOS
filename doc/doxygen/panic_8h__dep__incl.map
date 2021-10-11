@@ -1,0 +1,15 @@
+<map id="mentos/inc/system/panic.h" name="mentos/inc/system/panic.h">
+<area shape="rect" id="node1" title="Functions used to manage kernel panic." alt="" coords="1051,5,1248,32"/>
+<area shape="rect" id="node2" href="$exception_8c.html" title="Functions which manage the Interrupt Service Routines (ISRs)." alt="" coords="5,80,168,121"/>
+<area shape="rect" id="node3" href="$initrd_8c.html" title="Headers of functions for initrd filesystem." alt="" coords="193,87,351,114"/>
+<area shape="rect" id="node4" href="$read__write_8c.html" title="Read and write functions." alt="" coords="375,80,518,121"/>
+<area shape="rect" id="node5" href="$vfs_8c.html" title="Headers for Virtual File System (VFS)." alt="" coords="542,87,687,114"/>
+<area shape="rect" id="node6" href="$mentos_2src_2klib_2assert_8c.html" title=" " alt="" coords="711,87,889,114"/>
+<area shape="rect" id="node7" href="$buddysystem_8c.html" title="Buddy System." alt="" coords="913,87,1148,114"/>
+<area shape="rect" id="node8" href="$paging_8c.html" title="Implementation of a memory paging management." alt="" coords="1173,87,1363,114"/>
+<area shape="rect" id="node9" href="$vmem__map_8c.html" title="Virtual memory mapping routines." alt="" coords="1388,80,1567,121"/>
+<area shape="rect" id="node10" href="$multiboot_8c.html" title=" " alt="" coords="1591,87,1763,114"/>
+<area shape="rect" id="node11" href="$process_8c.html" title="Process data structures and functions." alt="" coords="1787,80,1935,121"/>
+<area shape="rect" id="node12" href="$scheduler_8c.html" title="Scheduler structures and functions." alt="" coords="1959,80,2107,121"/>
+<area shape="rect" id="node13" href="$panic_8c.html" title="Functions used to manage kernel panic." alt="" coords="2131,87,2327,114"/>
+</map>

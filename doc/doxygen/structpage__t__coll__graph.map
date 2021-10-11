@@ -1,0 +1,6 @@
+<map id="page_t" name="page_t">
+<area shape="rect" id="node1" title="Page descriptor. Use as a bitmap to understand the order of the block and if it is free or allocated." alt="" coords="119,233,185,260"/>
+<area shape="rect" id="node2" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="111,7,193,33"/>
+<area shape="rect" id="node3" href="$structbb__page__t.html" title="The base structure representing a bb page." alt="" coords="107,143,197,169"/>
+<area shape="rect" id="node4" href="$structkmem__cache__t.html" title="Stores the information of a cache." alt="" coords="221,143,342,169"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="hashmap_t" name="hashmap_t">
+<area shape="rect" id="node1" title="Stores information of a hashmap." alt="" coords="25,95,120,121"/>
+<area shape="rect" id="node2" href="$structhashmap__entry__t.html" title="Stores information of an entry of the hashmap." alt="" coords="5,5,140,32"/>
+</map>

@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['base_3586',['base',['../structgdt__pointer__t.html#a2041c66c342e293a1795b794381da711',1,'gdt_pointer_t::base()'],['../structidt__pointer__t.html#a35ccf6dda51d0e2b91db81b92b23b8fe',1,'idt_pointer_t::base()'],['../structkeymap__t.html#a2843f127c64a488af8ff978c873fa18c',1,'keymap_t::base()'],['../structtimer__list.html#a6605de233dcba73128341eb74ff0b5f2',1,'timer_list::base()']]],
+  ['base_5faddr_5fhigh_3587',['base_addr_high',['../structmultiboot__memory__map__t.html#a013dd4233a81e9ec199c60346af8f37c',1,'multiboot_memory_map_t']]],
+  ['base_5faddr_5flow_3588',['base_addr_low',['../structmultiboot__memory__map__t.html#abc0526e7c0e6bd5d2115c0f9dad7c26d',1,'multiboot_memory_map_t']]],
+  ['base_5fhigh_3589',['base_high',['../structgdt__descriptor__t.html#ad3da2801073a441313b112f25a8c0d19',1,'gdt_descriptor_t']]],
+  ['base_5flow_3590',['base_low',['../structgdt__descriptor__t.html#a9fe6e245a9d60ed155c9ae0504e5833d',1,'gdt_descriptor_t']]],
+  ['base_5fmiddle_3591',['base_middle',['../structgdt__descriptor__t.html#aa840fb524b122b7243c07a5ae1d40820',1,'gdt_descriptor_t']]],
+  ['base_5fpage_3592',['base_page',['../structbb__instance__t.html#a6db97f848795ea20c08ba88202973f23',1,'bb_instance_t']]],
+  ['bb_5finstance_3593',['bb_instance',['../structvirt__map__page__manager__t.html#a27629ac53f18dba73243945bcea38ac7',1,'virt_map_page_manager_t']]],
+  ['bbpage_3594',['bbpage',['../structvirt__map__page__t.html#ad905bb085e53fbda7e05e5a30f9af178',1,'virt_map_page_t::bbpage()'],['../structpage__t.html#a22ba648c3832ec830dad4bdade357bfe',1,'page_t::bbpage()']]],
+  ['bbpg_5foffset_3595',['bbpg_offset',['../structbb__instance__t.html#a9e8cdd810f28616578b6beb0d833ddc5',1,'bb_instance_t']]],
+  ['bit_5fmask_3596',['bit_mask',['../structvga__mode__t.html#a78cca198d27ff55d84775edd15f4bf5e',1,'vga_mode_t']]],
+  ['blocked_3597',['blocked',['../structtask__struct.html#a09266333fd5a7f08d79df3bec124bc02',1,'task_struct']]],
+  ['blue_3598',['blue',['../structpalette__entry__t.html#a0d87d04d4d0a5a2e1f340a8404fe0518',1,'palette_entry_t']]],
+  ['boot_5fdevice_3599',['boot_device',['../structmultiboot__info__t.html#a82aede64d415554c4c60e374a1d63fc2',1,'multiboot_info_t']]],
+  ['boot_5finfo_3600',['boot_info',['../kernel_8c.html#a6fb24e311419027d49f1cab853a9a9ac',1,'kernel.c']]],
+  ['boot_5floader_5fname_3601',['boot_loader_name',['../structmultiboot__info__t.html#a4c0d6f63d18d0e8c34de84f058801359',1,'multiboot_info_t']]],
+  ['bootloader_5fphy_5fend_3602',['bootloader_phy_end',['../structboot__info__t.html#a51210f512412ca7e47bdd86b80d76a08',1,'boot_info_t']]],
+  ['bootloader_5fphy_5fstart_3603',['bootloader_phy_start',['../structboot__info__t.html#a00fe373ae72b53a27733157f393c0213',1,'boot_info_t']]],
+  ['bpp_3604',['bpp',['../structvga__driver__t.html#aadf260c6106eb98c99f55313242b0410',1,'vga_driver_t']]],
+  ['brand_5fstring_3605',['brand_string',['../structcpuinfo__t.html#a07f74460d89abf5fcdc73068b263e2e0',1,'cpuinfo_t']]],
+  ['brk_3606',['brk',['../structmm__struct__t.html#a04153d4c8e6dc2370d238d45d069f32f',1,'mm_struct_t']]],
+  ['buddy_5fsystem_3607',['buddy_system',['../structzone__t.html#a9cbb2e975e8f572e89539c372fa70390',1,'zone_t']]]
+];

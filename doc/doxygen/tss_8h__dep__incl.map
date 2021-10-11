@@ -1,0 +1,6 @@
+<map id="mentos/inc/descriptor_tables/tss.h" name="mentos/inc/descriptor_tables/tss.h">
+<area shape="rect" id="node1" title=" " alt="" coords="192,5,355,47"/>
+<area shape="rect" id="node2" href="$gdt_8c.html" title="Functions which manage the Global Descriptor Table (GDT)." alt="" coords="5,95,168,136"/>
+<area shape="rect" id="node3" href="$tss_8c.html" title=" " alt="" coords="192,95,355,136"/>
+<area shape="rect" id="node4" href="$scheduler_8c.html" title="Scheduler structures and functions." alt="" coords="379,95,527,136"/>
+</map>

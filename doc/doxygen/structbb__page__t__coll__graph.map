@@ -1,0 +1,4 @@
+<map id="bb_page_t" name="bb_page_t">
+<area shape="rect" id="node1" title="The base structure representing a bb page." alt="" coords="5,112,95,139"/>
+<area shape="rect" id="node2" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="9,7,91,33"/>
+</map>

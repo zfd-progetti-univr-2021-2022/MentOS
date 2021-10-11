@@ -1,0 +1,12 @@
+<map id="mentos/src/drivers/rtc.c" name="mentos/src/drivers/rtc.c">
+<area shape="rect" id="node1" title="Real Time Clock (RTC) driver." alt="" coords="192,5,335,47"/>
+<area shape="rect" id="node2" href="$rtc_8h.html" title="Real Time Clock (RTC) driver." alt="" coords="83,95,183,121"/>
+<area shape="rect" id="node5" href="$pic8259_8h.html" title="Pic8259 definitions." alt="" coords="189,169,340,196"/>
+<area shape="rect" id="node7" href="$string_8h.html" title="String routines." alt="" coords="5,169,76,196"/>
+<area shape="rect" id="node8" title=" " alt="" coords="259,95,353,121"/>
+<area shape="rect" id="node9" href="$kernel_8h.html" title="Kernel generic data structure and functions." alt="" coords="365,169,439,196"/>
+<area shape="rect" id="node10" href="$isr_8h.html" title="Data structures concerning the Interrupt Service Routines (ISRs)." alt="" coords="429,95,594,121"/>
+<area shape="rect" id="node3" href="$time_8h.html" title="Time&#45;related functions." alt="" coords="101,169,165,196"/>
+<area shape="rect" id="node4" href="$stddef_8h.html" title="Define basic data types." alt="" coords="50,244,125,271"/>
+<area shape="rect" id="node6" href="$stdint_8h.html" title="Standard integer data&#45;types." alt="" coords="297,244,368,271"/>
+</map>

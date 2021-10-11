@@ -1,0 +1,7 @@
+<map id="vfs_file_t" name="vfs_file_t">
+<area shape="rect" id="node1" title="Data structure that contains information about the mounted filesystems." alt="" coords="105,187,187,213"/>
+<area shape="rect" id="node3" href="$structvfs__file__operations__t.html" title="Set of functions used to perform operations on files." alt="" coords="67,379,225,405"/>
+<area shape="rect" id="node2" href="$structlist__head.html" title="Structure used to implement the list_head data structure." alt="" coords="5,96,87,123"/>
+<area shape="rect" id="node4" href="$structvfs__sys__operations__t.html" title="Set of functions used to perform operations on filesystem." alt="" coords="168,96,327,123"/>
+<area shape="rect" id="node5" href="$structstat__t.html" title="Data structure which contains information about a file." alt="" coords="218,5,277,32"/>
+</map>
