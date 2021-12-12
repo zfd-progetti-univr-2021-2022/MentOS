@@ -69,7 +69,49 @@ static inline task_struct *__scheduler_rr(runqueue_t *runqueue, bool_t skip_peri
 /// @return the next task on success, NULL on failure.
 static inline task_struct *__scheduler_priority(runqueue_t *runqueue, bool_t skip_periodic)
 {
-    return __scheduler_rr(runqueue, skip_periodic);
+    // questa variabile mi dice a che punto sono con lo scorrimento
+    int scorrimento = 0;
+
+    // controllo se c'è un solo processo e in tal caso lo ritorno
+    if ((runqueue->curr->run_list.next == &runqueue->queue) && (runqueue->curr->run_list.prev == &runqueue->queue))
+        return runqueue->curr;
+
+    // By default, the next task is the current one.
+    task_struct *next = NULL;
+    task_struct *entry = NULL; //servirà per scorrere la lista
+
+    // Search for the next task (BEWARE: We do not start from the head, so INSIDE skip the head).
+    list_for_each_decl(it, &runqueue->curr->run_list)
+    {
+        // Check if we reached the head of list_head, and skip it.
+        if (it == &runqueue->queue) //if !isHead(L,lNode)-->pseudocodice delle slide
+            continue;
+
+        // Get the current entry.
+        entry = list_entry(it, task_struct, run_list); //elemento "scorritore" della lista
+
+        //controllo se sono all'inizio della lista
+        if (scorrimento == 0)
+            next=entry; //assegnamento di null per evitare di puntare ad una cella nulla nel confronto delle priorità
+
+        // We consider only runnable processes
+        if (entry->state != TASK_RUNNING)
+            continue;
+
+        // Skip the task if it is a periodic one, we are issued to skip
+        // periodic tasks, and the entry is not a periodic task under
+        // analysis.
+        if (entry->se.is_periodic && skip_periodic && !entry->se.is_under_analysis)
+            continue;
+
+        //scorro la lista e cerco il processo con priorità più alta
+        //in questo caso più bassa perchè più il valore è basso e più la priorità è alta
+        if(entry->se.prio < next->se.prio)
+            next = entry;
+
+        scorrimento++;
+    }
+    return next;
 }
 
 /// @brief It aims at giving a fair share of CPU time to processes, and
@@ -83,7 +125,56 @@ static inline task_struct *__scheduler_priority(runqueue_t *runqueue, bool_t ski
 /// @return the next task on success, NULL on failure.
 static inline task_struct *__scheduler_cfs(runqueue_t *runqueue, bool_t skip_periodic)
 {
-    return __scheduler_rr(runqueue, skip_periodic);
+    // Require: Current process c, List of processes L
+    // Ensure: Next process n
+
+    // controllo se c'è un solo processo e in tal caso lo ritorno
+    //if ((runqueue->curr->run_list.next == &runqueue->queue) && (runqueue->curr->run_list.prev == &runqueue->queue))
+        //return runqueue->curr;
+
+    // updateVirtualRuntime(c): vruntime =  delta_exec * (NICE_0_LOAD / weight(p))
+    time_t now;
+    sys_time(&now);  // funzione definita in src/klib/time.c
+    time_t delta_exec = now - runqueue->curr->se.exec_start;
+    int weight = GET_WEIGHT(runqueue->curr->se.prio);  // equivalente a: prio_to_weight[(runqueue->curr->se.prio % 100)];
+    runqueue->curr->se.vruntime += delta_exec * (NICE_0_LOAD / weight);
+
+    // n = c
+    task_struct *next = runqueue->curr;
+
+    // for all lNode in L do
+    list_for_each_decl(it, &runqueue->curr->run_list)
+    {
+        //if !isHead(L,lNode) then
+        if (it != &runqueue->queue)
+        {
+            // t = list_entry(lNode)
+            task_struct *entry = list_entry(it, task_struct, run_list);
+
+            // We consider only runnable processes
+            //if (entry->state != TASK_RUNNING)
+                //continue;
+
+            // Skip the task if it is a periodic one, we are issued to skip
+            // periodic tasks, and the entry is not a periodic task under
+            // analysis.
+            //if (entry->se.is_periodic && skip_periodic && !entry->se.is_under_analysis)
+                //continue;
+
+            // if virtualRuntime(t) < virtualRuntime(n) then
+            if (entry->se.vruntime < next->se.vruntime) {
+                // n = t
+                next = entry;
+            }
+            
+            sys_time(&now);  // funzione definita in src/klib/time.c
+    	    time_t delta_exec = now - runqueue->curr->se.exec_start;
+            weight = GET_WEIGHT(runqueue->curr->se.prio);  // equivalente a: prio_to_weight[(runqueue->curr->se.prio % 100)];
+            runqueue->curr->se.vruntime += delta_exec * (NICE_0_LOAD / weight);
+        }
+    }
+
+    return next;
 }
 
 /// @brief Executes the task with the earliest absolute deadline among all
