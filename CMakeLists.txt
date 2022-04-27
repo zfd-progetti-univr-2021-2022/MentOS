@@ -3,6 +3,10 @@
 project(MentOs)
 cmake_minimum_required(VERSION 2.8.4)
 
+if (CMAKE_C_COMPILER_VERSION VERSION_GREATER_EQUAL 10)
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fcommon")
+endif()
+
 message(STATUS "Crosscompiling: ${CMAKE_CROSSCOMPILING}")
 
 # ------------------------------------------------------------------------------
@@ -13,7 +17,7 @@ if ((${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Darwin") OR APPLE)
     # Apple MacOSx
 elseif ((${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Windows") OR WIN32)
     # Windows
-    set(EMULATOR_FLAGS ${EMULATOR_FLAGS} -sdl)
+    #set(EMULATOR_FLAGS ${EMULATOR_FLAGS} -sdl)
 else()
     # Generic Unix System
     find_program(LSB_RELEASE_EXEC lsb_release)
@@ -23,7 +27,7 @@ else()
     message(STATUS "LSB version: ${LSB_RELEASE_VERSION_SHORT}")
     if (${LSB_RELEASE_VERSION_SHORT} MATCHES "^18")
         # Ubuntu 18
-        set(EMULATOR_FLAGS ${EMULATOR_FLAGS} -sdl)
+        #set(EMULATOR_FLAGS ${EMULATOR_FLAGS} -sdl)
     elseif (${LSB_RELEASE_VERSION_SHORT} MATCHES "^19")
         # Ubuntu 19
         set(EMULATOR_FLAGS ${EMULATOR_FLAGS} -display gtk)
@@ -31,7 +35,7 @@ else()
         # Ubuntu 20
         set(EMULATOR_FLAGS ${EMULATOR_FLAGS} -display gtk)
     else()
-        set(EMULATOR_FLAGS ${EMULATOR_FLAGS} -sdl)
+        #set(EMULATOR_FLAGS ${EMULATOR_FLAGS} -sdl)
     endif()
 endif()
 
