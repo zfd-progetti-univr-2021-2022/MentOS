@@ -34,19 +34,21 @@ task_struct *pick_next_task(runqueue_t *runqueue, time_t delta_exec)
     //==== Implementatin of the Priority Scheduling algorithm ===============
 
     // get the first element of the list
-    next = list_entry(/*...*/);
+    next = list_entry(runqueue->curr->run_list.next,struct task_struct, run_list);
 
     // Get its static priority.
-    time_t min = /*...*/
+    time_t min = next->se.vruntime;
 
     list_head *it;
+
     // Inter over the runqueue to find the task with the smallest priority value
     list_for_each (it, &runqueue->queue) {
-        task_struct *entry = list_entry(/*...*/);
+
+        task_struct *entry = list_entry(it, task_struct, run_list);
+
         // Check entry has a lower priority
-        if (/*...*/) {
-            /*...*/
-        }
+        if (entry->se.prio < next->se.prio)
+            next = entry;
     }
 
     //=======================================================================
@@ -55,21 +57,34 @@ task_struct *pick_next_task(runqueue_t *runqueue, time_t delta_exec)
 
     // Get the weight of the current process.
     // (use GET_WEIGHT macro!)
-    int weight = /*...*/
+    int weight = GET_WEIGHT(runqueue->curr->se.prio);
 
     if (weight != NICE_0_LOAD) {
         // get the multiplicative factor for its delta_exec.
-        double factor = /*...*/
+        double factor = (NICE_0_LOAD/weight);
 
         // weight the delta_exec with the multiplicative factor.
-        delta_exec = // ...
+        delta_exec = delta_exec * factor;
     }
 
     // Update vruntime of the current process.
-    // ...
+    runqueue->curr->se.vruntime += delta_exec;
+
+    //create min
+    time_t min = runqueue->curr->se.vruntime;
 
     // Inter over the runqueue to find the task with the smallest vruntime value
-    // ...
+    list_head *it;
+    list_for_each (it, &runqueue->queue) {
+
+        task_struct *entry = list_entry(it, struct task_struct, run_list);
+
+        // Check entry has a lower priority
+        if (entry->se.vruntime <= min) {
+            min = entry->se.vruntime;
+            next = entry;
+        }
+    }
 
     //========================================================================
 #else
