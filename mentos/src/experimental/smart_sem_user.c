@@ -15,7 +15,9 @@ int sem_create()
 {
     int retval = 0;
 
-    /* ... */
+    DEFN_SYSCALL0(retval, __NR_sem_create);
+    if (retval < 0)
+        errno = -retval, retval = -1;
 
     dbg_print("sem_create() -> %d\n", retval);
 
@@ -28,7 +30,9 @@ int sem_destroy(int id)
     
     dbg_print("sem_destroy(%d)\n", id);
 
-    /* ... */
+    DEFN_SYSCALL1(retval, __NR_sem_destroy, id);
+    if (retval < 0)
+        errno = -retval, retval = -1;
 
     return retval;
 }
@@ -39,7 +43,9 @@ int sem_init(int id)
     
     dbg_print("sem_init(%d)\n", id);
 
-    /* ... */
+    DEFN_SYSCALL1(retval, __NR_sem_init, id);
+    if (retval < 0)
+        errno = -retval, retval = -1;
 
     return retval;
 }
@@ -51,7 +57,9 @@ int sem_acquire(int id)
     dbg_print("sem_acquire(%d)\n", id);
 
     do {
-        /* ... */
+        DEFN_SYSCALL1(retval, __NR_sem_acquire, id);
+        if (retval < 0)
+            errno = -retval, retval = -1;
     } while (retval != 1);
 
     return retval;
@@ -63,7 +71,9 @@ int sem_release(int id)
     
     dbg_print("sem_release(%d)\n", id);
 
-    /* ... */
+    DEFN_SYSCALL1(retval, __NR_sem_release, id);
+    if (retval < 0)
+        errno = -retval, retval = -1;
     
     return retval;
 }

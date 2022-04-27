@@ -221,12 +221,13 @@
 #define __NR_vfork 188
 #define __NR_free 189 // TODO: remove me!
 
-/*
-#define __NR_sem_... 190
-#define __NR_sem_... 191
-#define __NR_sem_... 192
-#define __NR_sem_... 193
-#define __NR_sem_... 194
-*/
+/* SYSCALL SEMAFORI */
+
+#define __NR_sem_create 190
+#define __NR_sem_destroy 191
+#define __NR_sem_init 192
+#define __NR_sem_acquire 193
+#define __NR_sem_release 194
+
 
 #define SYSCALL_NUMBER 195

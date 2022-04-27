@@ -64,11 +64,11 @@ void syscall_init()
 	sys_call_table[__NR_brk] = (SystemCall)umalloc; // TODO: sys_brk
 	sys_call_table[__NR_free] = (SystemCall)ufree; // TODO: sys_brk
 
-	// sys_call_table[__NR_sem_...] = (SystemCall)sys_sem_...;
-	// sys_call_table[__NR_sem_...] = (SystemCall)sys_sem_...;
-	// sys_call_table[__NR_sem_...] = (SystemCall)sys_sem_...;
-	// sys_call_table[__NR_sem_...] = (SystemCall)sys_sem_...;
-	// sys_call_table[__NR_sem_...] = (SystemCall)sys_sem_...;
+	sys_call_table[__NR_sem_create] = (SystemCall)sys_sem_create;
+	sys_call_table[__NR_sem_destroy] = (SystemCall)sys_sem_destroy;
+	sys_call_table[__NR_sem_init] = (SystemCall)sys_sem_init;
+	sys_call_table[__NR_sem_acquire] = (SystemCall)sys_sem_try_acquire;
+	sys_call_table[__NR_sem_release] = (SystemCall)sys_sem_release;
 
 	isr_install_handler(SYSTEM_CALL, &syscall_handler, "syscall_handler");
 }
