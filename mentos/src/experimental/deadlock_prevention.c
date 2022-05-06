@@ -25,11 +25,18 @@
 /// Suggestion!
 /// From arr_math.h you may need only: arr_g_any(), arr_add(), arr_sub(),
 /// all() and arr_ne();
-
 #include "deadlock_prevention.h"
-
 #include "arr_math.h"
 #include "kheap.h"
+
+/// Array of resources instances currently available;
+uint32_t *  available;
+/// Matrix of the maximum resources instances that each task may require;
+uint32_t ** max;
+/// Matrix of current resources instances allocation of each task.
+uint32_t ** alloc;
+/// Matrix of current resources instances need of each task.
+uint32_t ** need;
 
 /// @brief Check if the current system resource allocation maintains the system
 /// in a safe state.
@@ -40,67 +47,62 @@
 ///                         task.
 /// @param n Number of tasks currently in the system.
 /// @param m Number of resource types in the system (length of req_vec).
-static bool_t state_safe(uint32_t *arr_available, uint32_t **mat_alloc,
-        uint32_t **mat_need, size_t n, size_t m)
-{
-    // Allocate work as a copy of available.
-    uint32_t *work = memcpy(kmalloc(sizeof(uint32_t) * m), arr_available,
-                            sizeof(uint32_t) * m);
+static bool_t state_safe(uint32_t *arr_available, uint32_t **mat_alloc,uint32_t **mat_need, size_t n, size_t m){
+    // work è una copia di avaiable
+    uint32_t *work = memcpy(kmalloc(sizeof(uint32_t) * m), available,sizeof(uint32_t) * m);
 
-    // Allocate finish initialized with all false (zeros).
+    // inizializzo gli array di modo che contengano tutti false
     uint32_t *finish = all(kmalloc(sizeof(uint32_t) * n), 0UL, n);
     uint32_t *all_true = all(kmalloc(sizeof(uint32_t) * n), 1UL, n);
 
     int i;
-    // Loop while finish is not equal an array all true (ones).
-    while (/* ... */)
-    {
-        // Find a task that can satisfy all the resources it needs.
-        for (i = 0; i < n && (/* ... */ || /* ... */); i++);
-        if (i == n)
-        {
-            // Free memory.
+
+    // scorro finchè l'array non contiene tutti true
+    while (arr_ne(finish,all_true,n)){
+        // cerco un processo che possa soddisfare tutte le risorse di cui ha bisogno
+        for (i = 0; i < n && (finish[i] || arr_g_any(need[i],work,m)); i++);
+        if (i == n){
             kfree(work);
             kfree(finish);
             kfree(all_true);
             return false;
         }
-        else
-        {
-            // Assume to make available the resources that the task found needs.
-            /* ... */
+        else{
+            // faccio finta di rendere disponibili le risorse
+           arr_add(work,alloc[i],m);
+           finish[i]=1;
         }
     }
 
-    // Free memory.
+    // libero la memoria
     kfree(work);
     kfree(finish);
     kfree(all_true);
     return true;
 }
 
-deadlock_status_t request(uint32_t *req_vec, size_t task_i,
-        uint32_t *arr_available, uint32_t ** mat_alloc, uint32_t **mat_need,
-        size_t n, size_t m)
-{
-    if (/* ... */)
-    {
+deadlock_status_t request(uint32_t *req_vec, size_t task_i,uint32_t *arr_available, uint32_t ** mat_alloc, uint32_t **mat_need,size_t n, size_t m){
+    available = arr_available;
+    alloc = mat_alloc;
+    need = mat_need;
+
+    if (arr_g_any(req_vec,need[task_i],m))
         return ERROR;
-    }
 
-    if (/* ... */)
-    {
+    if (arr_g_any(req_vec,available,m))
         return WAIT;
-    }
 
-    // Try to allocate resources.
-    /* ... */
+    // provo ad allocare risorse
+    arr_sub(available,req_vec,m);
+    arr_add(alloc[task_i],req_vec,m);
+    arr_sub(need[task_i],req_vec,m);
 
-    // Check safe state
-    if (/* ... */)
-    {
-        // Restore previous allocation.
-        /* ... */
+    // controllo di essere in uno stato safe
+    if (!state_safe(available, alloc, need, n, m)){
+        // torno all'allocazione precedente
+        arr_add(available,req_vec,m);
+        arr_sub(alloc[task_i],req_vec,m);
+        arr_add(need[task_i],req_vec,m);
         return WAIT_UNSAFE;
     }
     return SAFE;
